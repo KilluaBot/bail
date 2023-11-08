@@ -91,11 +91,14 @@ export interface RegistrationOptions {
 	 * The captcha code if it was requested
 	 */
 	captcha?: string
+	pushToken?: Buffer
+	pushCode?: Buffer
 }
 
 export type RegistrationParams = RegistrationData & RegistrationOptions
 
-function convertBufferToUrlHex(buffer: Buffer) {
+function convertBufferToUrlHex(buffer?: Buffer) {
+	if (!buffer) return
 	var id = ''
 
 	buffer.forEach((x) => {
@@ -141,6 +144,8 @@ export function registrationParams(params: RegistrationParams) {
 		backup_token: convertBufferToUrlHex(params.backupToken),
 		token: md5(Buffer.concat([MOBILE_TOKEN, Buffer.from(params.phoneNumberNationalNumber)])).toString('hex'),
 		fraud_checkpoint_code: params.captcha,
+		push_token: convertBufferToUrlHex(params.pushToken),
+		push_code: convertBufferToUrlHex(params.pushCode),
 	}
 }
 
@@ -153,8 +158,6 @@ export function mobileRegisterCode(params: RegistrationParams, fetchOptions?: Ax
 			...registrationParams(params),
 			mcc: `${params.phoneNumberMobileCountryCode}`.padStart(3, '0'),
 			mnc: `${params.phoneNumberMobileNetworkCode || '001'}`.padStart(3, '0'),
-			sim_mcc: '000',
-			sim_mnc: '000',
 			method: params?.method || 'sms',
 			reason: '',
 			hasav: '1'
