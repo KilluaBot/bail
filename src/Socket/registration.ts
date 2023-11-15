@@ -11,8 +11,7 @@ function urlencode(str: string) {
 }
 
 const validRegistrationOptions = (config: RegistrationOptions) => config?.phoneNumberCountryCode &&
-	config.phoneNumberNationalNumber &&
-	config.phoneNumberMobileCountryCode
+	config.phoneNumberNationalNumber
 
 export const makeRegistrationSocket = (config: SocketConfig) => {
 	const sock = makeBusinessSocket(config)
@@ -22,7 +21,7 @@ export const makeRegistrationSocket = (config: SocketConfig) => {
 			throw new Error('please specify the registration options')
 		}
 
-		const result = await mobileRegister({ ...sock.authState.creds, ...sock.authState.creds.registration as RegistrationOptions, code }, config.options)
+		const result = await mobileRegister({ ...sock.authState.creds, ...sock.authState.creds.registration, code }, config.options)
 
 		sock.authState.creds.me = {
 			id: jidEncode(result.login!, 's.whatsapp.net'),
@@ -75,14 +74,6 @@ export interface RegistrationOptions {
 	phoneNumberCountryCode: string
 	/** your phone number without country code */
 	phoneNumberNationalNumber: string
-	/** the country code of your mobile network
-	 * @see {@link https://de.wikipedia.org/wiki/Mobile_Country_Code}
-	 */
-	phoneNumberMobileCountryCode: string
-	/** the network code of your mobile network
-	 * @see {@link https://de.wikipedia.org/wiki/Mobile_Network_Code}
-	 */
-	phoneNumberMobileNetworkCode: string
 	/**
 	 * How to send the one time code
 	 */
@@ -93,17 +84,23 @@ export interface RegistrationOptions {
 	captcha?: string
 	pushToken?: Buffer
 	pushCode?: Buffer
+	token?: Buffer
+	countryCode?: string
+	languageCode?: string
 }
 
 export type RegistrationParams = RegistrationData & RegistrationOptions
 
-function convertBufferToUrlHex(buffer?: Buffer) {
-	if (!buffer) return
+function convertBufferToUrlHex(buffer) {
+	if(!buffer) {
+		return
+	}
+
 	var id = ''
 
 	buffer.forEach((x) => {
 		// encode random identity_id buffer as percentage url encoding
-		id += `%${x.toString(16).padStart(2, '0').toLowerCase()}`
+		id += `%${x.toString(16).padStart(2, '0').toUpperCase()}`
 	})
 
 	return id
@@ -111,65 +108,80 @@ function convertBufferToUrlHex(buffer?: Buffer) {
 
 export function registrationParams(params: RegistrationParams) {
 	const e_regid = Buffer.alloc(4)
-	e_regid.writeInt32BE(params.registrationId)
+	e_regid.writeUInt32BE(params.registrationId)
 
 	const e_skey_id = Buffer.alloc(3)
-	e_skey_id.writeInt16BE(params.signedPreKey.keyId)
+	e_skey_id.writeUInt16BE(params.signedPreKey.keyId)
 
 	params.phoneNumberCountryCode = params.phoneNumberCountryCode.replace('+', '').trim()
 	params.phoneNumberNationalNumber = params.phoneNumberNationalNumber.replace(/[/-\s)(]/g, '').trim()
+	const now = Date.now()
+	let token = Buffer.concat([
+		params.token || MOBILE_TOKEN,
+		Buffer.from(params.phoneNumberNationalNumber)
+	])
 
 	return {
 		cc: params.phoneNumberCountryCode,
 		in: params.phoneNumberNationalNumber,
-		Rc: '0',
-		lg: 'en',
-		lc: 'GB',
-		mistyped: '6',
+		rc: '0',
+		lg: params.languageCode ?? 'en',
+		lc:  params.countryCode ?? 'GB',
+		// mistyped: '6',
 		authkey: Buffer.from(params.noiseKey.public).toString('base64url'),
 		e_regid: e_regid.toString('base64url'),
+		// e_regid: 'RLjGAw==',
 		e_keytype: 'BQ',
 		e_ident: Buffer.from(params.signedIdentityKey.public).toString('base64url'),
-		// e_skey_id: e_skey_id.toString('base64url'),
-		e_skey_id: 'AAAA',
+		e_skey_id: e_skey_id.toString('base64url'),
+		// e_skey_id: 'Wyhb',
 		e_skey_val: Buffer.from(params.signedPreKey.keyPair.public).toString('base64url'),
 		e_skey_sig: Buffer.from(params.signedPreKey.signature).toString('base64url'),
-		fdid: params.phoneId,
-		network_ratio_type: '1',
+		fdid: params.phoneId.toUpperCase(),
 		expid: params.deviceId,
-		simnum: '1',
-		hasinrc: '1',
-		pid: Math.floor(Math.random() * 1000).toString(),
 		id: convertBufferToUrlHex(params.identityId),
-		backup_token: convertBufferToUrlHex(params.backupToken),
-		token: md5(Buffer.concat([MOBILE_TOKEN, Buffer.from(params.phoneNumberNationalNumber)])).toString('hex'),
+		// backup_token: convertBufferToUrlHex(params.backupToken),
+		token: md5(token).toString('hex'),
 		fraud_checkpoint_code: params.captcha,
 		push_token: convertBufferToUrlHex(params.pushToken),
 		push_code: convertBufferToUrlHex(params.pushCode),
+		offline_ab: convertBufferToUrlHex(Buffer.from(JSON.stringify({"exposure":["dummy_aa_offline_rid_universe_ios|dummy_aa_offline_rid_experiment_ios|test","hide_link_device_button_release_rollout_universe|hide_link_device_button_release_rollout_experiment|control"],"metrics":{"expid_md":1699394894,"rc_old":true,"expid_cd":1699394894}})))
 	}
 }
 
 /**
  * Requests a registration code for the given phone number.
  */
-export function mobileRegisterCode(params: RegistrationParams, fetchOptions?: AxiosRequestConfig) {
+export async function mobileRegisterCode(params: RegistrationParams, fetchOptions?: AxiosRequestConfig) {
+	await mobileClientLog({
+		...params,
+		currentScreen: "verify_sms",
+		previousScreen: "enter_number",
+		actionTaken: "continue"
+	}, fetchOptions)
+
 	return mobileRegisterFetch('/code', {
+		...fetchOptions,
 		params: {
 			...registrationParams(params),
-			mcc: `${params.phoneNumberMobileCountryCode}`.padStart(3, '0'),
-			mnc: `${params.phoneNumberMobileNetworkCode || '001'}`.padStart(3, '0'),
+			sim_mcc: '000',
+			sim_mnc: '000',
 			method: params?.method || 'sms',
 			reason: '',
-			hasav: '1'
+			...fetchOptions?.params
 		},
-		...fetchOptions,
 	})
 }
 
-export function mobileRegisterExists(params: RegistrationParams, fetchOptions?: AxiosRequestConfig) {
+export async function mobileRegisterExists(params: RegistrationParams, fetchOptions?: AxiosRequestConfig) {
+	await axios(`${MOBILE_REGISTRATION_ENDPOINT}/reg_onboard_abprop?cc=${params.phoneNumberCountryCode}&in=${params.phoneNumberNationalNumber}&rc=0&ab_hash=1SFGP3}`, fetchOptions)
+
 	return mobileRegisterFetch('/exist', {
-		params: registrationParams(params),
-		...fetchOptions
+		...fetchOptions,
+		params: {
+			...registrationParams(params),
+			...fetchOptions?.params
+		},
 	})
 }
 
@@ -180,8 +192,45 @@ export async function mobileRegister(params: RegistrationParams & { code: string
 	//const result = await mobileRegisterFetch(`/reg_onboard_abprop?cc=${params.phoneNumberCountryCode}&in=${params.phoneNumberNationalNumber}&rc=0`)
 
 	return mobileRegisterFetch('/register', {
-		params: { ...registrationParams(params), code: params.code.replace('-', '') },
 		...fetchOptions,
+		params: {
+			...registrationParams(params),
+			code: params.code.replace('-', ''),
+			...fetchOptions?.params
+		},
+	})
+}
+
+export function mobileRegisterCaptcha(params: RegistrationParams, fetchOptions?: AxiosRequestConfig) {
+    return mobileRegisterFetch('/captcha_verify', {
+        ...fetchOptions,
+        params: {
+            ...registrationParams(params),
+            sim_mcc: "000",
+            sim_mnc: "000",
+            method: (params === null || params === void 0 ? void 0 : params.method) || 'sms',
+            reason: '',
+            hasav: '1', 
+            fraud_checkpoint_code: params.captcha,
+			...fetchOptions?.params
+        },
+    }); 
+}
+
+export function mobileClientLog(params: RegistrationParams & {
+	currentScreen: string
+	previousScreen: string
+	actionTaken: string
+}, fetchOptions?: AxiosRequestConfig) {
+	return mobileRegisterFetch('/client_log', {
+		...fetchOptions,
+		params: {
+			...registrationParams(params),
+			current_screen: params.currentScreen,
+			previous_screen: params.previousScreen,
+			action_taken: params.actionTaken,
+			...fetchOptions?.params
+		},
 	})
 }
 
@@ -209,7 +258,12 @@ export async function mobileRegisterFetch(path: string, opts: AxiosRequestConfig
 			}
 		}
 
-		url += `?${parameter.join('&')}`
+
+		const ENC = mobileRegisterEncrypt(parameter.join('&'))
+
+		url += `?ENC=${ENC}`
+		console.log(opts.params)
+		console.log(url)
 		delete opts.params
 	}
 
@@ -217,17 +271,21 @@ export async function mobileRegisterFetch(path: string, opts: AxiosRequestConfig
 		opts.headers = {}
 	}
 
-	opts.headers['User-Agent'] = MOBILE_USERAGENT
+	opts.headers["Accept"] = "*/*"
+	if (!opts.headers["Accept-Language"]) opts.headers["Accept-Language"] = "en-us"
+	if (!opts.headers['User-Agent']) opts.headers['User-Agent'] = MOBILE_USERAGENT
 
 	const response = await axios(url, opts)
 
 	var json = response.data
+	const isExists = path === '/exist'
 
-	if(response.status > 300 || json.reason) {
+	if(response.status > 300 || (json.reason && !isExists)) {
 		throw json
 	}
 
-	if(json.status && !['ok', 'sent'].includes(json.status)) {
+
+	if(json.status && !['ok', 'sent', 'verified'].includes(json.status) && !isExists) {
 		throw json
 	}
 

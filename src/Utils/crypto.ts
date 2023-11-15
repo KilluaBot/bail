@@ -25,7 +25,7 @@ export const Curve = {
 		return Buffer.from(shared)
 	},
 	sign: (privateKey: Uint8Array, buf: Uint8Array) => (
-		libsignal.curve.calculateSignature(privateKey, buf)
+		Buffer.from(libsignal.curve.calculateSignature(privateKey, buf))
 	),
 	verify: (pubKey: Uint8Array, message: Uint8Array, signature: Uint8Array) => {
 		try {

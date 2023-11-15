@@ -87,12 +87,6 @@ const startSock = async() => {
 		registration.phoneNumber = phoneNumber.format('E.164')
 		registration.phoneNumberCountryCode = phoneNumber.countryCallingCode
 		registration.phoneNumberNationalNumber = phoneNumber.nationalNumber
-		const mcc = PHONENUMBER_MCC[phoneNumber.countryCallingCode]
-		if(!mcc) {
-			throw new Error('Could not find MCC for phone number: ' + registration!.phoneNumber + '\nPlease specify the MCC manually.')
-		}
-
-		registration.phoneNumberMobileCountryCode = mcc
 
 		async function enterCode() {
 			try {
