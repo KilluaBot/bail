@@ -115,8 +115,7 @@ export function registrationParams(params: RegistrationParams) {
 
 	params.phoneNumberCountryCode = params.phoneNumberCountryCode.replace('+', '').trim()
 	params.phoneNumberNationalNumber = params.phoneNumberNationalNumber.replace(/[/-\s)(]/g, '').trim()
-	const now = Date.now()
-	let token = Buffer.concat([
+	const token = Buffer.concat([
 		params.token || MOBILE_TOKEN,
 		Buffer.from(params.phoneNumberNationalNumber)
 	])
@@ -145,7 +144,7 @@ export function registrationParams(params: RegistrationParams) {
 		fraud_checkpoint_code: params.captcha,
 		push_token: convertBufferToUrlHex(params.pushToken),
 		push_code: convertBufferToUrlHex(params.pushCode),
-		offline_ab: convertBufferToUrlHex(Buffer.from(JSON.stringify({"exposure":["dummy_aa_offline_rid_universe_ios|dummy_aa_offline_rid_experiment_ios|test","hide_link_device_button_release_rollout_universe|hide_link_device_button_release_rollout_experiment|control"],"metrics":{"expid_md":1699394894,"rc_old":true,"expid_cd":1699394894}})))
+		offline_ab: convertBufferToUrlHex(Buffer.from(JSON.stringify({ 'exposure':['dummy_aa_offline_rid_universe_ios|dummy_aa_offline_rid_experiment_ios|test', 'hide_link_device_button_release_rollout_universe|hide_link_device_button_release_rollout_experiment|control'], 'metrics':{ 'expid_md':1699394894, 'rc_old':true, 'expid_cd':1699394894 } })))
 	}
 }
 
@@ -155,9 +154,9 @@ export function registrationParams(params: RegistrationParams) {
 export async function mobileRegisterCode(params: RegistrationParams, fetchOptions?: AxiosRequestConfig) {
 	await mobileClientLog({
 		...params,
-		currentScreen: "verify_sms",
-		previousScreen: "enter_number",
-		actionTaken: "continue"
+		currentScreen: 'verify_sms',
+		previousScreen: 'enter_number',
+		actionTaken: 'continue'
 	}, fetchOptions)
 
 	return mobileRegisterFetch('/code', {
@@ -202,19 +201,19 @@ export async function mobileRegister(params: RegistrationParams & { code: string
 }
 
 export function mobileRegisterCaptcha(params: RegistrationParams, fetchOptions?: AxiosRequestConfig) {
-    return mobileRegisterFetch('/captcha_verify', {
-        ...fetchOptions,
-        params: {
-            ...registrationParams(params),
-            sim_mcc: "000",
-            sim_mnc: "000",
-            method: (params === null || params === void 0 ? void 0 : params.method) || 'sms',
-            reason: '',
-            hasav: '1', 
-            fraud_checkpoint_code: params.captcha,
+	return mobileRegisterFetch('/captcha_verify', {
+		...fetchOptions,
+		params: {
+			...registrationParams(params),
+			sim_mcc: '000',
+			sim_mnc: '000',
+			method: (params === null || params === void 0 ? void 0 : params.method) || 'sms',
+			reason: '',
+			hasav: '1',
+			fraud_checkpoint_code: params.captcha,
 			...fetchOptions?.params
-        },
-    }); 
+		},
+	})
 }
 
 export function mobileClientLog(params: RegistrationParams & {
@@ -271,9 +270,14 @@ export async function mobileRegisterFetch(path: string, opts: AxiosRequestConfig
 		opts.headers = {}
 	}
 
-	opts.headers["Accept"] = "*/*"
-	if (!opts.headers["Accept-Language"]) opts.headers["Accept-Language"] = "en-us"
-	if (!opts.headers['User-Agent']) opts.headers['User-Agent'] = MOBILE_USERAGENT
+	opts.headers['Accept'] = '*/*'
+	if(!opts.headers['Accept-Language']) {
+		opts.headers['Accept-Language'] = 'en-us'
+	}
+
+	if(!opts.headers['User-Agent']) {
+		opts.headers['User-Agent'] = MOBILE_USERAGENT
+	}
 
 	const response = await axios(url, opts)
 
