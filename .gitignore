@@ -14,6 +14,7 @@ lib
 messages*.json
 node_modules
 output.csv
+package-lock.json
 Proxy
 test.ts
 TestData
