@@ -536,6 +536,12 @@ export const generateWAMessageContent = async(
 		m[messageType].contextInfo.mentionedJid = message.mentions
 	}
 
+	if ('groupMentions' in message && message.groupMentions?.length) {
+		const [messageType] = Object.keys(m)
+		m[messageType].contextInfo = m[messageType] || { }
+		m[messageType].contextInfo.groupMentions = message.groupMentions
+	}
+
 	if('edit' in message) {
 		m = {
 			protocolMessage: {
