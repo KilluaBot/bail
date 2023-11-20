@@ -7,7 +7,7 @@ import open from 'open'
 import fs from 'fs'
 
 const logger = MAIN_LOGGER.child({})
-logger.level = 'trace'
+logger.level = 'error'
 
 const useStore = !process.argv.includes('--no-store')
 const doReplies = !process.argv.includes('--no-reply')
@@ -190,6 +190,10 @@ const startSock = async() => {
 
 			if(events.call) {
 				console.log('recv call event', events.call)
+			}
+
+			if (events["chats.phoneNumberShare"]) {
+				console.log(events["chats.phoneNumberShare"])
 			}
 
 			// history received

@@ -325,7 +325,7 @@ export async function generateThumbnail(
 
 export const getHttpStream = async(url: string | URL, options: AxiosRequestConfig & { isStream?: true } = {}) => {
 	const { default: axios } = await import('axios')
-	const fetched = await axios.get(url.toString(), { ...options, responseType: 'stream' })
+	const fetched = await axios.get(url.toString(), { ...options, responseType: 'stream' } as unknown as undefined)
 	return fetched.data as Readable
 }
 
@@ -643,7 +643,7 @@ export const getWAUploadToServer = (
 						responseType: 'json',
 						maxBodyLength: Infinity,
 						maxContentLength: Infinity,
-					}
+					} as unknown as undefined
 				)
 				result = body.data
 
