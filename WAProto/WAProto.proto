@@ -2568,6 +2568,7 @@ message SyncActionValue {
     optional BotWelcomeRequestAction botWelcomeRequestAction = 45;
     optional DeleteIndividualCallLogAction deleteIndividualCallLog = 46;
     optional LabelReorderingAction labelReorderingAction = 47;
+    optional PaymentInfoAction paymentInfoAction = 48;
     message AgentAction {
         optional string name = 1;
         optional int32 deviceID = 2;
@@ -2682,6 +2683,10 @@ message SyncActionValue {
     
     message NuxAction {
         optional bool acknowledged = 1;
+    }
+    
+    message PaymentInfoAction {
+        optional string cpi = 1;
     }
     
     message PinAction {

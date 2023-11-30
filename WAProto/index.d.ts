@@ -1,4 +1,5 @@
 import * as $protobuf from "protobufjs";
+import Long = require("long");
 /** Namespace proto. */
 export namespace proto {
 
@@ -114,6 +115,13 @@ export namespace proto {
          * @returns JSON object
          */
         public toJSON(): { [k: string]: any };
+
+        /**
+         * Gets the default type url for ADVDeviceIdentity
+         * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+         * @returns The default type url
+         */
+        public static getTypeUrl(typeUrlPrefix?: string): string;
     }
 
     /** ADVEncryptionType enum. */
@@ -234,6 +242,13 @@ export namespace proto {
          * @returns JSON object
          */
         public toJSON(): { [k: string]: any };
+
+        /**
+         * Gets the default type url for ADVKeyIndexList
+         * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+         * @returns The default type url
+         */
+        public static getTypeUrl(typeUrlPrefix?: string): string;
     }
 
     /** Properties of a ADVSignedDeviceIdentity. */
@@ -342,6 +357,13 @@ export namespace proto {
          * @returns JSON object
          */
         public toJSON(): { [k: string]: any };
+
+        /**
+         * Gets the default type url for ADVSignedDeviceIdentity
+         * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+         * @returns The default type url
+         */
+        public static getTypeUrl(typeUrlPrefix?: string): string;
     }
 
     /** Properties of a ADVSignedDeviceIdentityHMAC. */
@@ -444,6 +466,13 @@ export namespace proto {
          * @returns JSON object
          */
         public toJSON(): { [k: string]: any };
+
+        /**
+         * Gets the default type url for ADVSignedDeviceIdentityHMAC
+         * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+         * @returns The default type url
+         */
+        public static getTypeUrl(typeUrlPrefix?: string): string;
     }
 
     /** Properties of a ADVSignedKeyIndexList. */
@@ -546,6 +575,13 @@ export namespace proto {
          * @returns JSON object
          */
         public toJSON(): { [k: string]: any };
+
+        /**
+         * Gets the default type url for ADVSignedKeyIndexList
+         * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+         * @returns The default type url
+         */
+        public static getTypeUrl(typeUrlPrefix?: string): string;
     }
 
     /** Properties of an ActionLink. */
@@ -642,6 +678,13 @@ export namespace proto {
          * @returns JSON object
          */
         public toJSON(): { [k: string]: any };
+
+        /**
+         * Gets the default type url for ActionLink
+         * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+         * @returns The default type url
+         */
+        public static getTypeUrl(typeUrlPrefix?: string): string;
     }
 
     /** Properties of an AutoDownloadSettings. */
@@ -750,6 +793,13 @@ export namespace proto {
          * @returns JSON object
          */
         public toJSON(): { [k: string]: any };
+
+        /**
+         * Gets the default type url for AutoDownloadSettings
+         * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+         * @returns The default type url
+         */
+        public static getTypeUrl(typeUrlPrefix?: string): string;
     }
 
     /** Properties of an AvatarUserSettings. */
@@ -846,6 +896,13 @@ export namespace proto {
          * @returns JSON object
          */
         public toJSON(): { [k: string]: any };
+
+        /**
+         * Gets the default type url for AvatarUserSettings
+         * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+         * @returns The default type url
+         */
+        public static getTypeUrl(typeUrlPrefix?: string): string;
     }
 
     /** Properties of a BizAccountLinkInfo. */
@@ -960,6 +1017,13 @@ export namespace proto {
          * @returns JSON object
          */
         public toJSON(): { [k: string]: any };
+
+        /**
+         * Gets the default type url for BizAccountLinkInfo
+         * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+         * @returns The default type url
+         */
+        public static getTypeUrl(typeUrlPrefix?: string): string;
     }
 
     namespace BizAccountLinkInfo {
@@ -1070,6 +1134,13 @@ export namespace proto {
          * @returns JSON object
          */
         public toJSON(): { [k: string]: any };
+
+        /**
+         * Gets the default type url for BizAccountPayload
+         * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+         * @returns The default type url
+         */
+        public static getTypeUrl(typeUrlPrefix?: string): string;
     }
 
     /** Properties of a BizIdentityInfo. */
@@ -1202,6 +1273,13 @@ export namespace proto {
          * @returns JSON object
          */
         public toJSON(): { [k: string]: any };
+
+        /**
+         * Gets the default type url for BizIdentityInfo
+         * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+         * @returns The default type url
+         */
+        public static getTypeUrl(typeUrlPrefix?: string): string;
     }
 
     namespace BizIdentityInfo {
@@ -1338,6 +1416,13 @@ export namespace proto {
          * @returns JSON object
          */
         public toJSON(): { [k: string]: any };
+
+        /**
+         * Gets the default type url for BotAvatarMetadata
+         * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+         * @returns The default type url
+         */
+        public static getTypeUrl(typeUrlPrefix?: string): string;
     }
 
     /** Properties of a BotMetadata. */
@@ -1446,6 +1531,13 @@ export namespace proto {
          * @returns JSON object
          */
         public toJSON(): { [k: string]: any };
+
+        /**
+         * Gets the default type url for BotMetadata
+         * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+         * @returns The default type url
+         */
+        public static getTypeUrl(typeUrlPrefix?: string): string;
     }
 
     /** Properties of a BotPluginMetadata. */
@@ -1566,6 +1658,13 @@ export namespace proto {
          * @returns JSON object
          */
         public toJSON(): { [k: string]: any };
+
+        /**
+         * Gets the default type url for BotPluginMetadata
+         * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+         * @returns The default type url
+         */
+        public static getTypeUrl(typeUrlPrefix?: string): string;
     }
 
     namespace BotPluginMetadata {
@@ -1677,6 +1776,13 @@ export namespace proto {
          * @returns JSON object
          */
         public toJSON(): { [k: string]: any };
+
+        /**
+         * Gets the default type url for BotSuggestedPromptMetadata
+         * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+         * @returns The default type url
+         */
+        public static getTypeUrl(typeUrlPrefix?: string): string;
     }
 
     /** Properties of a CallLogRecord. */
@@ -1851,6 +1957,13 @@ export namespace proto {
          * @returns JSON object
          */
         public toJSON(): { [k: string]: any };
+
+        /**
+         * Gets the default type url for CallLogRecord
+         * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+         * @returns The default type url
+         */
+        public static getTypeUrl(typeUrlPrefix?: string): string;
     }
 
     namespace CallLogRecord {
@@ -1971,6 +2084,13 @@ export namespace proto {
              * @returns JSON object
              */
             public toJSON(): { [k: string]: any };
+
+            /**
+             * Gets the default type url for ParticipantInfo
+             * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+             * @returns The default type url
+             */
+            public static getTypeUrl(typeUrlPrefix?: string): string;
         }
 
         /** SilenceReason enum. */
@@ -2076,6 +2196,13 @@ export namespace proto {
          * @returns JSON object
          */
         public toJSON(): { [k: string]: any };
+
+        /**
+         * Gets the default type url for CertChain
+         * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+         * @returns The default type url
+         */
+        public static getTypeUrl(typeUrlPrefix?: string): string;
     }
 
     namespace CertChain {
@@ -2174,6 +2301,13 @@ export namespace proto {
              * @returns JSON object
              */
             public toJSON(): { [k: string]: any };
+
+            /**
+             * Gets the default type url for NoiseCertificate
+             * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+             * @returns The default type url
+             */
+            public static getTypeUrl(typeUrlPrefix?: string): string;
         }
 
         namespace NoiseCertificate {
@@ -2290,6 +2424,13 @@ export namespace proto {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for Details
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
         }
     }
@@ -2382,6 +2523,13 @@ export namespace proto {
          * @returns JSON object
          */
         public toJSON(): { [k: string]: any };
+
+        /**
+         * Gets the default type url for ChatRowOpaqueData
+         * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+         * @returns The default type url
+         */
+        public static getTypeUrl(typeUrlPrefix?: string): string;
     }
 
     namespace ChatRowOpaqueData {
@@ -2498,6 +2646,13 @@ export namespace proto {
              * @returns JSON object
              */
             public toJSON(): { [k: string]: any };
+
+            /**
+             * Gets the default type url for DraftMessage
+             * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+             * @returns The default type url
+             */
+            public static getTypeUrl(typeUrlPrefix?: string): string;
         }
 
         namespace DraftMessage {
@@ -2656,6 +2811,13 @@ export namespace proto {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for CtwaContextData
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
 
             namespace CtwaContextData {
@@ -2774,6 +2936,13 @@ export namespace proto {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for CtwaContextLinkData
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
         }
     }
@@ -3022,6 +3191,13 @@ export namespace proto {
          * @returns JSON object
          */
         public toJSON(): { [k: string]: any };
+
+        /**
+         * Gets the default type url for ClientPayload
+         * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+         * @returns The default type url
+         */
+        public static getTypeUrl(typeUrlPrefix?: string): string;
     }
 
     namespace ClientPayload {
@@ -3150,6 +3326,13 @@ export namespace proto {
              * @returns JSON object
              */
             public toJSON(): { [k: string]: any };
+
+            /**
+             * Gets the default type url for DNSSource
+             * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+             * @returns The default type url
+             */
+            public static getTypeUrl(typeUrlPrefix?: string): string;
         }
 
         namespace DNSSource {
@@ -3294,6 +3477,13 @@ export namespace proto {
              * @returns JSON object
              */
             public toJSON(): { [k: string]: any };
+
+            /**
+             * Gets the default type url for DevicePairingRegistrationData
+             * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+             * @returns The default type url
+             */
+            public static getTypeUrl(typeUrlPrefix?: string): string;
         }
 
         /** IOSAppExtension enum. */
@@ -3397,6 +3587,13 @@ export namespace proto {
              * @returns JSON object
              */
             public toJSON(): { [k: string]: any };
+
+            /**
+             * Gets the default type url for InteropData
+             * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+             * @returns The default type url
+             */
+            public static getTypeUrl(typeUrlPrefix?: string): string;
         }
 
         /** Product enum. */
@@ -3579,6 +3776,13 @@ export namespace proto {
              * @returns JSON object
              */
             public toJSON(): { [k: string]: any };
+
+            /**
+             * Gets the default type url for UserAgent
+             * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+             * @returns The default type url
+             */
+            public static getTypeUrl(typeUrlPrefix?: string): string;
         }
 
         namespace UserAgent {
@@ -3695,6 +3899,13 @@ export namespace proto {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for AppVersion
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
 
             /** DeviceType enum. */
@@ -3860,6 +4071,13 @@ export namespace proto {
              * @returns JSON object
              */
             public toJSON(): { [k: string]: any };
+
+            /**
+             * Gets the default type url for WebInfo
+             * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+             * @returns The default type url
+             */
+            public static getTypeUrl(typeUrlPrefix?: string): string;
         }
 
         namespace WebInfo {
@@ -4021,6 +4239,13 @@ export namespace proto {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for WebdPayload
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
         }
     }
@@ -4119,6 +4344,13 @@ export namespace proto {
          * @returns JSON object
          */
         public toJSON(): { [k: string]: any };
+
+        /**
+         * Gets the default type url for CommentMetadata
+         * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+         * @returns The default type url
+         */
+        public static getTypeUrl(typeUrlPrefix?: string): string;
     }
 
     /** Properties of a ContextInfo. */
@@ -4401,6 +4633,13 @@ export namespace proto {
          * @returns JSON object
          */
         public toJSON(): { [k: string]: any };
+
+        /**
+         * Gets the default type url for ContextInfo
+         * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+         * @returns The default type url
+         */
+        public static getTypeUrl(typeUrlPrefix?: string): string;
     }
 
     namespace ContextInfo {
@@ -4511,6 +4750,13 @@ export namespace proto {
              * @returns JSON object
              */
             public toJSON(): { [k: string]: any };
+
+            /**
+             * Gets the default type url for AdReplyInfo
+             * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+             * @returns The default type url
+             */
+            public static getTypeUrl(typeUrlPrefix?: string): string;
         }
 
         namespace AdReplyInfo {
@@ -4611,6 +4857,13 @@ export namespace proto {
              * @returns JSON object
              */
             public toJSON(): { [k: string]: any };
+
+            /**
+             * Gets the default type url for BusinessMessageForwardInfo
+             * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+             * @returns The default type url
+             */
+            public static getTypeUrl(typeUrlPrefix?: string): string;
         }
 
         /** Properties of a DataSharingContext. */
@@ -4701,6 +4954,13 @@ export namespace proto {
              * @returns JSON object
              */
             public toJSON(): { [k: string]: any };
+
+            /**
+             * Gets the default type url for DataSharingContext
+             * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+             * @returns The default type url
+             */
+            public static getTypeUrl(typeUrlPrefix?: string): string;
         }
 
         /** Properties of an ExternalAdReplyInfo. */
@@ -4869,6 +5129,13 @@ export namespace proto {
              * @returns JSON object
              */
             public toJSON(): { [k: string]: any };
+
+            /**
+             * Gets the default type url for ExternalAdReplyInfo
+             * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+             * @returns The default type url
+             */
+            public static getTypeUrl(typeUrlPrefix?: string): string;
         }
 
         namespace ExternalAdReplyInfo {
@@ -4981,6 +5248,13 @@ export namespace proto {
              * @returns JSON object
              */
             public toJSON(): { [k: string]: any };
+
+            /**
+             * Gets the default type url for ForwardedNewsletterMessageInfo
+             * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+             * @returns The default type url
+             */
+            public static getTypeUrl(typeUrlPrefix?: string): string;
         }
 
         /** Properties of a UTMInfo. */
@@ -5077,6 +5351,13 @@ export namespace proto {
              * @returns JSON object
              */
             public toJSON(): { [k: string]: any };
+
+            /**
+             * Gets the default type url for UTMInfo
+             * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+             * @returns The default type url
+             */
+            public static getTypeUrl(typeUrlPrefix?: string): string;
         }
     }
 
@@ -5432,6 +5713,13 @@ export namespace proto {
          * @returns JSON object
          */
         public toJSON(): { [k: string]: any };
+
+        /**
+         * Gets the default type url for Conversation
+         * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+         * @returns The default type url
+         */
+        public static getTypeUrl(typeUrlPrefix?: string): string;
     }
 
     namespace Conversation {
@@ -5538,6 +5826,13 @@ export namespace proto {
          * @returns JSON object
          */
         public toJSON(): { [k: string]: any };
+
+        /**
+         * Gets the default type url for DeviceConsistencyCodeMessage
+         * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+         * @returns The default type url
+         */
+        public static getTypeUrl(typeUrlPrefix?: string): string;
     }
 
     /** Properties of a DeviceListMetadata. */
@@ -5670,6 +5965,13 @@ export namespace proto {
          * @returns JSON object
          */
         public toJSON(): { [k: string]: any };
+
+        /**
+         * Gets the default type url for DeviceListMetadata
+         * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+         * @returns The default type url
+         */
+        public static getTypeUrl(typeUrlPrefix?: string): string;
     }
 
     /** Properties of a DeviceProps. */
@@ -5784,6 +6086,13 @@ export namespace proto {
          * @returns JSON object
          */
         public toJSON(): { [k: string]: any };
+
+        /**
+         * Gets the default type url for DeviceProps
+         * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+         * @returns The default type url
+         */
+        public static getTypeUrl(typeUrlPrefix?: string): string;
     }
 
     namespace DeviceProps {
@@ -5900,6 +6209,13 @@ export namespace proto {
              * @returns JSON object
              */
             public toJSON(): { [k: string]: any };
+
+            /**
+             * Gets the default type url for AppVersion
+             * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+             * @returns The default type url
+             */
+            public static getTypeUrl(typeUrlPrefix?: string): string;
         }
 
         /** Properties of a HistorySyncConfig. */
@@ -6032,6 +6348,13 @@ export namespace proto {
              * @returns JSON object
              */
             public toJSON(): { [k: string]: any };
+
+            /**
+             * Gets the default type url for HistorySyncConfig
+             * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+             * @returns The default type url
+             */
+            public static getTypeUrl(typeUrlPrefix?: string): string;
         }
 
         /** PlatformType enum. */
@@ -6168,6 +6491,13 @@ export namespace proto {
          * @returns JSON object
          */
         public toJSON(): { [k: string]: any };
+
+        /**
+         * Gets the default type url for DisappearingMode
+         * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+         * @returns The default type url
+         */
+        public static getTypeUrl(typeUrlPrefix?: string): string;
     }
 
     namespace DisappearingMode {
@@ -6282,6 +6612,13 @@ export namespace proto {
          * @returns JSON object
          */
         public toJSON(): { [k: string]: any };
+
+        /**
+         * Gets the default type url for EphemeralSetting
+         * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+         * @returns The default type url
+         */
+        public static getTypeUrl(typeUrlPrefix?: string): string;
     }
 
     /** Properties of an EventResponse. */
@@ -6390,6 +6727,13 @@ export namespace proto {
          * @returns JSON object
          */
         public toJSON(): { [k: string]: any };
+
+        /**
+         * Gets the default type url for EventResponse
+         * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+         * @returns The default type url
+         */
+        public static getTypeUrl(typeUrlPrefix?: string): string;
     }
 
     /** Properties of an ExitCode. */
@@ -6486,6 +6830,13 @@ export namespace proto {
          * @returns JSON object
          */
         public toJSON(): { [k: string]: any };
+
+        /**
+         * Gets the default type url for ExitCode
+         * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+         * @returns The default type url
+         */
+        public static getTypeUrl(typeUrlPrefix?: string): string;
     }
 
     /** Properties of an ExternalBlobReference. */
@@ -6606,6 +6957,13 @@ export namespace proto {
          * @returns JSON object
          */
         public toJSON(): { [k: string]: any };
+
+        /**
+         * Gets the default type url for ExternalBlobReference
+         * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+         * @returns The default type url
+         */
+        public static getTypeUrl(typeUrlPrefix?: string): string;
     }
 
     /** Properties of a GlobalSettings. */
@@ -6798,6 +7156,13 @@ export namespace proto {
          * @returns JSON object
          */
         public toJSON(): { [k: string]: any };
+
+        /**
+         * Gets the default type url for GlobalSettings
+         * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+         * @returns The default type url
+         */
+        public static getTypeUrl(typeUrlPrefix?: string): string;
     }
 
     /** Properties of a GroupMention. */
@@ -6894,6 +7259,13 @@ export namespace proto {
          * @returns JSON object
          */
         public toJSON(): { [k: string]: any };
+
+        /**
+         * Gets the default type url for GroupMention
+         * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+         * @returns The default type url
+         */
+        public static getTypeUrl(typeUrlPrefix?: string): string;
     }
 
     /** Properties of a GroupParticipant. */
@@ -6990,6 +7362,13 @@ export namespace proto {
          * @returns JSON object
          */
         public toJSON(): { [k: string]: any };
+
+        /**
+         * Gets the default type url for GroupParticipant
+         * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+         * @returns The default type url
+         */
+        public static getTypeUrl(typeUrlPrefix?: string): string;
     }
 
     namespace GroupParticipant {
@@ -7102,6 +7481,13 @@ export namespace proto {
          * @returns JSON object
          */
         public toJSON(): { [k: string]: any };
+
+        /**
+         * Gets the default type url for HandshakeMessage
+         * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+         * @returns The default type url
+         */
+        public static getTypeUrl(typeUrlPrefix?: string): string;
     }
 
     namespace HandshakeMessage {
@@ -7200,6 +7586,13 @@ export namespace proto {
              * @returns JSON object
              */
             public toJSON(): { [k: string]: any };
+
+            /**
+             * Gets the default type url for ClientFinish
+             * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+             * @returns The default type url
+             */
+            public static getTypeUrl(typeUrlPrefix?: string): string;
         }
 
         /** Properties of a ClientHello. */
@@ -7302,6 +7695,13 @@ export namespace proto {
              * @returns JSON object
              */
             public toJSON(): { [k: string]: any };
+
+            /**
+             * Gets the default type url for ClientHello
+             * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+             * @returns The default type url
+             */
+            public static getTypeUrl(typeUrlPrefix?: string): string;
         }
 
         /** Properties of a ServerHello. */
@@ -7404,6 +7804,13 @@ export namespace proto {
              * @returns JSON object
              */
             public toJSON(): { [k: string]: any };
+
+            /**
+             * Gets the default type url for ServerHello
+             * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+             * @returns The default type url
+             */
+            public static getTypeUrl(typeUrlPrefix?: string): string;
         }
     }
 
@@ -7567,6 +7974,13 @@ export namespace proto {
          * @returns JSON object
          */
         public toJSON(): { [k: string]: any };
+
+        /**
+         * Gets the default type url for HistorySync
+         * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+         * @returns The default type url
+         */
+        public static getTypeUrl(typeUrlPrefix?: string): string;
     }
 
     namespace HistorySync {
@@ -7683,6 +8097,13 @@ export namespace proto {
          * @returns JSON object
          */
         public toJSON(): { [k: string]: any };
+
+        /**
+         * Gets the default type url for HistorySyncMsg
+         * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+         * @returns The default type url
+         */
+        public static getTypeUrl(typeUrlPrefix?: string): string;
     }
 
     /** Properties of a HydratedTemplateButton. */
@@ -7794,6 +8215,13 @@ export namespace proto {
          * @returns JSON object
          */
         public toJSON(): { [k: string]: any };
+
+        /**
+         * Gets the default type url for HydratedTemplateButton
+         * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+         * @returns The default type url
+         */
+        public static getTypeUrl(typeUrlPrefix?: string): string;
     }
 
     namespace HydratedTemplateButton {
@@ -7892,6 +8320,13 @@ export namespace proto {
              * @returns JSON object
              */
             public toJSON(): { [k: string]: any };
+
+            /**
+             * Gets the default type url for HydratedCallButton
+             * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+             * @returns The default type url
+             */
+            public static getTypeUrl(typeUrlPrefix?: string): string;
         }
 
         /** Properties of a HydratedQuickReplyButton. */
@@ -7988,6 +8423,13 @@ export namespace proto {
              * @returns JSON object
              */
             public toJSON(): { [k: string]: any };
+
+            /**
+             * Gets the default type url for HydratedQuickReplyButton
+             * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+             * @returns The default type url
+             */
+            public static getTypeUrl(typeUrlPrefix?: string): string;
         }
 
         /** Properties of a HydratedURLButton. */
@@ -8096,6 +8538,13 @@ export namespace proto {
              * @returns JSON object
              */
             public toJSON(): { [k: string]: any };
+
+            /**
+             * Gets the default type url for HydratedURLButton
+             * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+             * @returns The default type url
+             */
+            public static getTypeUrl(typeUrlPrefix?: string): string;
         }
 
         namespace HydratedURLButton {
@@ -8203,6 +8652,13 @@ export namespace proto {
          * @returns JSON object
          */
         public toJSON(): { [k: string]: any };
+
+        /**
+         * Gets the default type url for IdentityKeyPairStructure
+         * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+         * @returns The default type url
+         */
+        public static getTypeUrl(typeUrlPrefix?: string): string;
     }
 
     /** Properties of an InteractiveAnnotation. */
@@ -8308,6 +8764,13 @@ export namespace proto {
          * @returns JSON object
          */
         public toJSON(): { [k: string]: any };
+
+        /**
+         * Gets the default type url for InteractiveAnnotation
+         * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+         * @returns The default type url
+         */
+        public static getTypeUrl(typeUrlPrefix?: string): string;
     }
 
     /** Properties of a KeepInChat. */
@@ -8428,6 +8891,13 @@ export namespace proto {
          * @returns JSON object
          */
         public toJSON(): { [k: string]: any };
+
+        /**
+         * Gets the default type url for KeepInChat
+         * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+         * @returns The default type url
+         */
+        public static getTypeUrl(typeUrlPrefix?: string): string;
     }
 
     /** KeepType enum. */
@@ -8549,6 +9019,13 @@ export namespace proto {
          * @returns JSON object
          */
         public toJSON(): { [k: string]: any };
+
+        /**
+         * Gets the default type url for KeyExchangeMessage
+         * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+         * @returns The default type url
+         */
+        public static getTypeUrl(typeUrlPrefix?: string): string;
     }
 
     /** Properties of a KeyId. */
@@ -8639,6 +9116,13 @@ export namespace proto {
          * @returns JSON object
          */
         public toJSON(): { [k: string]: any };
+
+        /**
+         * Gets the default type url for KeyId
+         * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+         * @returns The default type url
+         */
+        public static getTypeUrl(typeUrlPrefix?: string): string;
     }
 
     /** Properties of a LocalizedName. */
@@ -8741,6 +9225,13 @@ export namespace proto {
          * @returns JSON object
          */
         public toJSON(): { [k: string]: any };
+
+        /**
+         * Gets the default type url for LocalizedName
+         * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+         * @returns The default type url
+         */
+        public static getTypeUrl(typeUrlPrefix?: string): string;
     }
 
     /** Properties of a Location. */
@@ -8843,6 +9334,13 @@ export namespace proto {
          * @returns JSON object
          */
         public toJSON(): { [k: string]: any };
+
+        /**
+         * Gets the default type url for Location
+         * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+         * @returns The default type url
+         */
+        public static getTypeUrl(typeUrlPrefix?: string): string;
     }
 
     /** Properties of a MediaData. */
@@ -8933,6 +9431,13 @@ export namespace proto {
          * @returns JSON object
          */
         public toJSON(): { [k: string]: any };
+
+        /**
+         * Gets the default type url for MediaData
+         * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+         * @returns The default type url
+         */
+        public static getTypeUrl(typeUrlPrefix?: string): string;
     }
 
     /** Properties of a MediaRetryNotification. */
@@ -9035,6 +9540,13 @@ export namespace proto {
          * @returns JSON object
          */
         public toJSON(): { [k: string]: any };
+
+        /**
+         * Gets the default type url for MediaRetryNotification
+         * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+         * @returns The default type url
+         */
+        public static getTypeUrl(typeUrlPrefix?: string): string;
     }
 
     namespace MediaRetryNotification {
@@ -9533,6 +10045,13 @@ export namespace proto {
          * @returns JSON object
          */
         public toJSON(): { [k: string]: any };
+
+        /**
+         * Gets the default type url for Message
+         * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+         * @returns The default type url
+         */
+        public static getTypeUrl(typeUrlPrefix?: string): string;
     }
 
     namespace Message {
@@ -9631,6 +10150,13 @@ export namespace proto {
              * @returns JSON object
              */
             public toJSON(): { [k: string]: any };
+
+            /**
+             * Gets the default type url for AppStateFatalExceptionNotification
+             * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+             * @returns The default type url
+             */
+            public static getTypeUrl(typeUrlPrefix?: string): string;
         }
 
         /** Properties of an AppStateSyncKey. */
@@ -9727,6 +10253,13 @@ export namespace proto {
              * @returns JSON object
              */
             public toJSON(): { [k: string]: any };
+
+            /**
+             * Gets the default type url for AppStateSyncKey
+             * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+             * @returns The default type url
+             */
+            public static getTypeUrl(typeUrlPrefix?: string): string;
         }
 
         /** Properties of an AppStateSyncKeyData. */
@@ -9829,6 +10362,13 @@ export namespace proto {
              * @returns JSON object
              */
             public toJSON(): { [k: string]: any };
+
+            /**
+             * Gets the default type url for AppStateSyncKeyData
+             * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+             * @returns The default type url
+             */
+            public static getTypeUrl(typeUrlPrefix?: string): string;
         }
 
         /** Properties of an AppStateSyncKeyFingerprint. */
@@ -9931,6 +10471,13 @@ export namespace proto {
              * @returns JSON object
              */
             public toJSON(): { [k: string]: any };
+
+            /**
+             * Gets the default type url for AppStateSyncKeyFingerprint
+             * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+             * @returns The default type url
+             */
+            public static getTypeUrl(typeUrlPrefix?: string): string;
         }
 
         /** Properties of an AppStateSyncKeyId. */
@@ -10021,6 +10568,13 @@ export namespace proto {
              * @returns JSON object
              */
             public toJSON(): { [k: string]: any };
+
+            /**
+             * Gets the default type url for AppStateSyncKeyId
+             * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+             * @returns The default type url
+             */
+            public static getTypeUrl(typeUrlPrefix?: string): string;
         }
 
         /** Properties of an AppStateSyncKeyRequest. */
@@ -10111,6 +10665,13 @@ export namespace proto {
              * @returns JSON object
              */
             public toJSON(): { [k: string]: any };
+
+            /**
+             * Gets the default type url for AppStateSyncKeyRequest
+             * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+             * @returns The default type url
+             */
+            public static getTypeUrl(typeUrlPrefix?: string): string;
         }
 
         /** Properties of an AppStateSyncKeyShare. */
@@ -10201,6 +10762,13 @@ export namespace proto {
              * @returns JSON object
              */
             public toJSON(): { [k: string]: any };
+
+            /**
+             * Gets the default type url for AppStateSyncKeyShare
+             * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+             * @returns The default type url
+             */
+            public static getTypeUrl(typeUrlPrefix?: string): string;
         }
 
         /** Properties of an AudioMessage. */
@@ -10375,6 +10943,13 @@ export namespace proto {
              * @returns JSON object
              */
             public toJSON(): { [k: string]: any };
+
+            /**
+             * Gets the default type url for AudioMessage
+             * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+             * @returns The default type url
+             */
+            public static getTypeUrl(typeUrlPrefix?: string): string;
         }
 
         /** Properties of a BCallMessage. */
@@ -10483,6 +11058,13 @@ export namespace proto {
              * @returns JSON object
              */
             public toJSON(): { [k: string]: any };
+
+            /**
+             * Gets the default type url for BCallMessage
+             * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+             * @returns The default type url
+             */
+            public static getTypeUrl(typeUrlPrefix?: string): string;
         }
 
         namespace BCallMessage {
@@ -10607,6 +11189,13 @@ export namespace proto {
              * @returns JSON object
              */
             public toJSON(): { [k: string]: any };
+
+            /**
+             * Gets the default type url for BotFeedbackMessage
+             * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+             * @returns The default type url
+             */
+            public static getTypeUrl(typeUrlPrefix?: string): string;
         }
 
         namespace BotFeedbackMessage {
@@ -10789,6 +11378,13 @@ export namespace proto {
              * @returns JSON object
              */
             public toJSON(): { [k: string]: any };
+
+            /**
+             * Gets the default type url for ButtonsMessage
+             * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+             * @returns The default type url
+             */
+            public static getTypeUrl(typeUrlPrefix?: string): string;
         }
 
         namespace ButtonsMessage {
@@ -10899,6 +11495,13 @@ export namespace proto {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for Button
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
 
             namespace Button {
@@ -10991,6 +11594,13 @@ export namespace proto {
                      * @returns JSON object
                      */
                     public toJSON(): { [k: string]: any };
+
+                    /**
+                     * Gets the default type url for ButtonText
+                     * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                     * @returns The default type url
+                     */
+                    public static getTypeUrl(typeUrlPrefix?: string): string;
                 }
 
                 /** Properties of a NativeFlowInfo. */
@@ -11087,6 +11697,13 @@ export namespace proto {
                      * @returns JSON object
                      */
                     public toJSON(): { [k: string]: any };
+
+                    /**
+                     * Gets the default type url for NativeFlowInfo
+                     * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                     * @returns The default type url
+                     */
+                    public static getTypeUrl(typeUrlPrefix?: string): string;
                 }
 
                 /** Type enum. */
@@ -11218,6 +11835,13 @@ export namespace proto {
              * @returns JSON object
              */
             public toJSON(): { [k: string]: any };
+
+            /**
+             * Gets the default type url for ButtonsResponseMessage
+             * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+             * @returns The default type url
+             */
+            public static getTypeUrl(typeUrlPrefix?: string): string;
         }
 
         namespace ButtonsResponseMessage {
@@ -11335,6 +11959,13 @@ export namespace proto {
              * @returns JSON object
              */
             public toJSON(): { [k: string]: any };
+
+            /**
+             * Gets the default type url for Call
+             * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+             * @returns The default type url
+             */
+            public static getTypeUrl(typeUrlPrefix?: string): string;
         }
 
         /** Properties of a CallLogMessage. */
@@ -11449,6 +12080,13 @@ export namespace proto {
              * @returns JSON object
              */
             public toJSON(): { [k: string]: any };
+
+            /**
+             * Gets the default type url for CallLogMessage
+             * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+             * @returns The default type url
+             */
+            public static getTypeUrl(typeUrlPrefix?: string): string;
         }
 
         namespace CallLogMessage {
@@ -11559,6 +12197,13 @@ export namespace proto {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for CallParticipant
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
 
             /** CallType enum. */
@@ -11657,6 +12302,13 @@ export namespace proto {
              * @returns JSON object
              */
             public toJSON(): { [k: string]: any };
+
+            /**
+             * Gets the default type url for CancelPaymentRequestMessage
+             * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+             * @returns The default type url
+             */
+            public static getTypeUrl(typeUrlPrefix?: string): string;
         }
 
         /** Properties of a Chat. */
@@ -11753,6 +12405,13 @@ export namespace proto {
              * @returns JSON object
              */
             public toJSON(): { [k: string]: any };
+
+            /**
+             * Gets the default type url for Chat
+             * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+             * @returns The default type url
+             */
+            public static getTypeUrl(typeUrlPrefix?: string): string;
         }
 
         /** Properties of a CommentMessage. */
@@ -11849,6 +12508,13 @@ export namespace proto {
              * @returns JSON object
              */
             public toJSON(): { [k: string]: any };
+
+            /**
+             * Gets the default type url for CommentMessage
+             * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+             * @returns The default type url
+             */
+            public static getTypeUrl(typeUrlPrefix?: string): string;
         }
 
         /** Properties of a ContactMessage. */
@@ -11951,6 +12617,13 @@ export namespace proto {
              * @returns JSON object
              */
             public toJSON(): { [k: string]: any };
+
+            /**
+             * Gets the default type url for ContactMessage
+             * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+             * @returns The default type url
+             */
+            public static getTypeUrl(typeUrlPrefix?: string): string;
         }
 
         /** Properties of a ContactsArrayMessage. */
@@ -12053,6 +12726,13 @@ export namespace proto {
              * @returns JSON object
              */
             public toJSON(): { [k: string]: any };
+
+            /**
+             * Gets the default type url for ContactsArrayMessage
+             * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+             * @returns The default type url
+             */
+            public static getTypeUrl(typeUrlPrefix?: string): string;
         }
 
         /** Properties of a DeclinePaymentRequestMessage. */
@@ -12143,6 +12823,13 @@ export namespace proto {
              * @returns JSON object
              */
             public toJSON(): { [k: string]: any };
+
+            /**
+             * Gets the default type url for DeclinePaymentRequestMessage
+             * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+             * @returns The default type url
+             */
+            public static getTypeUrl(typeUrlPrefix?: string): string;
         }
 
         /** Properties of a DeviceSentMessage. */
@@ -12245,6 +12932,13 @@ export namespace proto {
              * @returns JSON object
              */
             public toJSON(): { [k: string]: any };
+
+            /**
+             * Gets the default type url for DeviceSentMessage
+             * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+             * @returns The default type url
+             */
+            public static getTypeUrl(typeUrlPrefix?: string): string;
         }
 
         /** Properties of a DocumentMessage. */
@@ -12449,6 +13143,13 @@ export namespace proto {
              * @returns JSON object
              */
             public toJSON(): { [k: string]: any };
+
+            /**
+             * Gets the default type url for DocumentMessage
+             * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+             * @returns The default type url
+             */
+            public static getTypeUrl(typeUrlPrefix?: string): string;
         }
 
         /** Properties of an EncCommentMessage. */
@@ -12551,6 +13252,13 @@ export namespace proto {
              * @returns JSON object
              */
             public toJSON(): { [k: string]: any };
+
+            /**
+             * Gets the default type url for EncCommentMessage
+             * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+             * @returns The default type url
+             */
+            public static getTypeUrl(typeUrlPrefix?: string): string;
         }
 
         /** Properties of an EncEventResponseMessage. */
@@ -12653,6 +13361,13 @@ export namespace proto {
              * @returns JSON object
              */
             public toJSON(): { [k: string]: any };
+
+            /**
+             * Gets the default type url for EncEventResponseMessage
+             * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+             * @returns The default type url
+             */
+            public static getTypeUrl(typeUrlPrefix?: string): string;
         }
 
         /** Properties of an EncReactionMessage. */
@@ -12755,6 +13470,13 @@ export namespace proto {
              * @returns JSON object
              */
             public toJSON(): { [k: string]: any };
+
+            /**
+             * Gets the default type url for EncReactionMessage
+             * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+             * @returns The default type url
+             */
+            public static getTypeUrl(typeUrlPrefix?: string): string;
         }
 
         /** Properties of an EventMessage. */
@@ -12881,6 +13603,13 @@ export namespace proto {
              * @returns JSON object
              */
             public toJSON(): { [k: string]: any };
+
+            /**
+             * Gets the default type url for EventMessage
+             * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+             * @returns The default type url
+             */
+            public static getTypeUrl(typeUrlPrefix?: string): string;
         }
 
         /** Properties of an EventResponseMessage. */
@@ -12977,6 +13706,13 @@ export namespace proto {
              * @returns JSON object
              */
             public toJSON(): { [k: string]: any };
+
+            /**
+             * Gets the default type url for EventResponseMessage
+             * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+             * @returns The default type url
+             */
+            public static getTypeUrl(typeUrlPrefix?: string): string;
         }
 
         namespace EventResponseMessage {
@@ -13215,6 +13951,13 @@ export namespace proto {
              * @returns JSON object
              */
             public toJSON(): { [k: string]: any };
+
+            /**
+             * Gets the default type url for ExtendedTextMessage
+             * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+             * @returns The default type url
+             */
+            public static getTypeUrl(typeUrlPrefix?: string): string;
         }
 
         namespace ExtendedTextMessage {
@@ -13336,6 +14079,13 @@ export namespace proto {
              * @returns JSON object
              */
             public toJSON(): { [k: string]: any };
+
+            /**
+             * Gets the default type url for FutureProofMessage
+             * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+             * @returns The default type url
+             */
+            public static getTypeUrl(typeUrlPrefix?: string): string;
         }
 
         /** Properties of a GroupInviteMessage. */
@@ -13468,6 +14218,13 @@ export namespace proto {
              * @returns JSON object
              */
             public toJSON(): { [k: string]: any };
+
+            /**
+             * Gets the default type url for GroupInviteMessage
+             * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+             * @returns The default type url
+             */
+            public static getTypeUrl(typeUrlPrefix?: string): string;
         }
 
         namespace GroupInviteMessage {
@@ -13615,6 +14372,13 @@ export namespace proto {
              * @returns JSON object
              */
             public toJSON(): { [k: string]: any };
+
+            /**
+             * Gets the default type url for HighlyStructuredMessage
+             * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+             * @returns The default type url
+             */
+            public static getTypeUrl(typeUrlPrefix?: string): string;
         }
 
         namespace HighlyStructuredMessage {
@@ -13722,6 +14486,13 @@ export namespace proto {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for HSMLocalizableParameter
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
 
             namespace HSMLocalizableParameter {
@@ -13820,6 +14591,13 @@ export namespace proto {
                      * @returns JSON object
                      */
                     public toJSON(): { [k: string]: any };
+
+                    /**
+                     * Gets the default type url for HSMCurrency
+                     * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                     * @returns The default type url
+                     */
+                    public static getTypeUrl(typeUrlPrefix?: string): string;
                 }
 
                 /** Properties of a HSMDateTime. */
@@ -13919,6 +14697,13 @@ export namespace proto {
                      * @returns JSON object
                      */
                     public toJSON(): { [k: string]: any };
+
+                    /**
+                     * Gets the default type url for HSMDateTime
+                     * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                     * @returns The default type url
+                     */
+                    public static getTypeUrl(typeUrlPrefix?: string): string;
                 }
 
                 namespace HSMDateTime {
@@ -14047,6 +14832,13 @@ export namespace proto {
                          * @returns JSON object
                          */
                         public toJSON(): { [k: string]: any };
+
+                        /**
+                         * Gets the default type url for HSMDateTimeComponent
+                         * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                         * @returns The default type url
+                         */
+                        public static getTypeUrl(typeUrlPrefix?: string): string;
                     }
 
                     namespace HSMDateTimeComponent {
@@ -14157,6 +14949,13 @@ export namespace proto {
                          * @returns JSON object
                          */
                         public toJSON(): { [k: string]: any };
+
+                        /**
+                         * Gets the default type url for HSMDateTimeUnixEpoch
+                         * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                         * @returns The default type url
+                         */
+                        public static getTypeUrl(typeUrlPrefix?: string): string;
                     }
                 }
             }
@@ -14316,6 +15115,13 @@ export namespace proto {
              * @returns JSON object
              */
             public toJSON(): { [k: string]: any };
+
+            /**
+             * Gets the default type url for HistorySyncNotification
+             * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+             * @returns The default type url
+             */
+            public static getTypeUrl(typeUrlPrefix?: string): string;
         }
 
         namespace HistorySyncNotification {
@@ -14576,6 +15382,13 @@ export namespace proto {
              * @returns JSON object
              */
             public toJSON(): { [k: string]: any };
+
+            /**
+             * Gets the default type url for ImageMessage
+             * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+             * @returns The default type url
+             */
+            public static getTypeUrl(typeUrlPrefix?: string): string;
         }
 
         /** Properties of an InitialSecurityNotificationSettingSync. */
@@ -14666,6 +15479,13 @@ export namespace proto {
              * @returns JSON object
              */
             public toJSON(): { [k: string]: any };
+
+            /**
+             * Gets the default type url for InitialSecurityNotificationSettingSync
+             * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+             * @returns The default type url
+             */
+            public static getTypeUrl(typeUrlPrefix?: string): string;
         }
 
         /** Properties of an InteractiveMessage. */
@@ -14801,6 +15621,13 @@ export namespace proto {
              * @returns JSON object
              */
             public toJSON(): { [k: string]: any };
+
+            /**
+             * Gets the default type url for InteractiveMessage
+             * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+             * @returns The default type url
+             */
+            public static getTypeUrl(typeUrlPrefix?: string): string;
         }
 
         namespace InteractiveMessage {
@@ -14893,6 +15720,13 @@ export namespace proto {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for Body
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
 
             /** Properties of a CarouselMessage. */
@@ -14989,6 +15823,13 @@ export namespace proto {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for CarouselMessage
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
 
             /** Properties of a CollectionMessage. */
@@ -15091,6 +15932,13 @@ export namespace proto {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for CollectionMessage
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
 
             /** Properties of a Footer. */
@@ -15181,6 +16029,13 @@ export namespace proto {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for Footer
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
 
             /** Properties of a Header. */
@@ -15316,6 +16171,13 @@ export namespace proto {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for Header
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
 
             /** Properties of a NativeFlowMessage. */
@@ -15418,6 +16280,13 @@ export namespace proto {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for NativeFlowMessage
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
 
             namespace NativeFlowMessage {
@@ -15516,6 +16385,13 @@ export namespace proto {
                      * @returns JSON object
                      */
                     public toJSON(): { [k: string]: any };
+
+                    /**
+                     * Gets the default type url for NativeFlowButton
+                     * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                     * @returns The default type url
+                     */
+                    public static getTypeUrl(typeUrlPrefix?: string): string;
                 }
             }
 
@@ -15619,6 +16495,13 @@ export namespace proto {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for ShopMessage
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
 
             namespace ShopMessage {
@@ -15736,6 +16619,13 @@ export namespace proto {
              * @returns JSON object
              */
             public toJSON(): { [k: string]: any };
+
+            /**
+             * Gets the default type url for InteractiveResponseMessage
+             * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+             * @returns The default type url
+             */
+            public static getTypeUrl(typeUrlPrefix?: string): string;
         }
 
         namespace InteractiveResponseMessage {
@@ -15834,6 +16724,13 @@ export namespace proto {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for Body
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
 
             namespace Body {
@@ -15945,6 +16842,13 @@ export namespace proto {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for NativeFlowResponseMessage
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
         }
 
@@ -16090,6 +16994,13 @@ export namespace proto {
              * @returns JSON object
              */
             public toJSON(): { [k: string]: any };
+
+            /**
+             * Gets the default type url for InvoiceMessage
+             * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+             * @returns The default type url
+             */
+            public static getTypeUrl(typeUrlPrefix?: string): string;
         }
 
         namespace InvoiceMessage {
@@ -16201,6 +17112,13 @@ export namespace proto {
              * @returns JSON object
              */
             public toJSON(): { [k: string]: any };
+
+            /**
+             * Gets the default type url for KeepInChatMessage
+             * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+             * @returns The default type url
+             */
+            public static getTypeUrl(typeUrlPrefix?: string): string;
         }
 
         /** Properties of a ListMessage. */
@@ -16333,6 +17251,13 @@ export namespace proto {
              * @returns JSON object
              */
             public toJSON(): { [k: string]: any };
+
+            /**
+             * Gets the default type url for ListMessage
+             * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+             * @returns The default type url
+             */
+            public static getTypeUrl(typeUrlPrefix?: string): string;
         }
 
         namespace ListMessage {
@@ -16432,6 +17357,13 @@ export namespace proto {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for Product
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
 
             /** Properties of a ProductListHeaderImage. */
@@ -16528,6 +17460,13 @@ export namespace proto {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for ProductListHeaderImage
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
 
             /** Properties of a ProductListInfo. */
@@ -16630,6 +17569,13 @@ export namespace proto {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for ProductListInfo
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
 
             /** Properties of a ProductSection. */
@@ -16726,6 +17672,13 @@ export namespace proto {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for ProductSection
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
 
             /** Properties of a Row. */
@@ -16828,6 +17781,13 @@ export namespace proto {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for Row
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
 
             /** Properties of a Section. */
@@ -16924,6 +17884,13 @@ export namespace proto {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for Section
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
         }
 
@@ -17039,6 +18006,13 @@ export namespace proto {
              * @returns JSON object
              */
             public toJSON(): { [k: string]: any };
+
+            /**
+             * Gets the default type url for ListResponseMessage
+             * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+             * @returns The default type url
+             */
+            public static getTypeUrl(typeUrlPrefix?: string): string;
         }
 
         namespace ListResponseMessage {
@@ -17137,6 +18111,13 @@ export namespace proto {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for SingleSelectReply
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
         }
 
@@ -17282,6 +18263,13 @@ export namespace proto {
              * @returns JSON object
              */
             public toJSON(): { [k: string]: any };
+
+            /**
+             * Gets the default type url for LiveLocationMessage
+             * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+             * @returns The default type url
+             */
+            public static getTypeUrl(typeUrlPrefix?: string): string;
         }
 
         /** Properties of a LocationMessage. */
@@ -17438,6 +18426,13 @@ export namespace proto {
              * @returns JSON object
              */
             public toJSON(): { [k: string]: any };
+
+            /**
+             * Gets the default type url for LocationMessage
+             * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+             * @returns The default type url
+             */
+            public static getTypeUrl(typeUrlPrefix?: string): string;
         }
 
         /** Properties of a MessageHistoryBundle. */
@@ -17570,6 +18565,13 @@ export namespace proto {
              * @returns JSON object
              */
             public toJSON(): { [k: string]: any };
+
+            /**
+             * Gets the default type url for MessageHistoryBundle
+             * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+             * @returns The default type url
+             */
+            public static getTypeUrl(typeUrlPrefix?: string): string;
         }
 
         /** Properties of a NewsletterAdminInviteMessage. */
@@ -17684,6 +18686,13 @@ export namespace proto {
              * @returns JSON object
              */
             public toJSON(): { [k: string]: any };
+
+            /**
+             * Gets the default type url for NewsletterAdminInviteMessage
+             * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+             * @returns The default type url
+             */
+            public static getTypeUrl(typeUrlPrefix?: string): string;
         }
 
         /** Properties of an OrderMessage. */
@@ -17852,6 +18861,13 @@ export namespace proto {
              * @returns JSON object
              */
             public toJSON(): { [k: string]: any };
+
+            /**
+             * Gets the default type url for OrderMessage
+             * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+             * @returns The default type url
+             */
+            public static getTypeUrl(typeUrlPrefix?: string): string;
         }
 
         namespace OrderMessage {
@@ -17963,6 +18979,13 @@ export namespace proto {
              * @returns JSON object
              */
             public toJSON(): { [k: string]: any };
+
+            /**
+             * Gets the default type url for PaymentInviteMessage
+             * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+             * @returns The default type url
+             */
+            public static getTypeUrl(typeUrlPrefix?: string): string;
         }
 
         namespace PaymentInviteMessage {
@@ -18088,6 +19111,13 @@ export namespace proto {
              * @returns JSON object
              */
             public toJSON(): { [k: string]: any };
+
+            /**
+             * Gets the default type url for PeerDataOperationRequestMessage
+             * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+             * @returns The default type url
+             */
+            public static getTypeUrl(typeUrlPrefix?: string): string;
         }
 
         namespace PeerDataOperationRequestMessage {
@@ -18204,6 +19234,13 @@ export namespace proto {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for HistorySyncOnDemandRequest
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
 
             /** Properties of a PlaceholderMessageResendRequest. */
@@ -18294,6 +19331,13 @@ export namespace proto {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for PlaceholderMessageResendRequest
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
 
             /** Properties of a RequestStickerReupload. */
@@ -18384,6 +19428,13 @@ export namespace proto {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for RequestStickerReupload
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
 
             /** Properties of a RequestUrlPreview. */
@@ -18480,6 +19531,13 @@ export namespace proto {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for RequestUrlPreview
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
         }
 
@@ -18583,6 +19641,13 @@ export namespace proto {
              * @returns JSON object
              */
             public toJSON(): { [k: string]: any };
+
+            /**
+             * Gets the default type url for PeerDataOperationRequestResponseMessage
+             * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+             * @returns The default type url
+             */
+            public static getTypeUrl(typeUrlPrefix?: string): string;
         }
 
         namespace PeerDataOperationRequestResponseMessage {
@@ -18693,6 +19758,13 @@ export namespace proto {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for PeerDataOperationResult
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
 
             namespace PeerDataOperationResult {
@@ -18827,6 +19899,13 @@ export namespace proto {
                      * @returns JSON object
                      */
                     public toJSON(): { [k: string]: any };
+
+                    /**
+                     * Gets the default type url for LinkPreviewResponse
+                     * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                     * @returns The default type url
+                     */
+                    public static getTypeUrl(typeUrlPrefix?: string): string;
                 }
 
                 namespace LinkPreviewResponse {
@@ -18955,6 +20034,13 @@ export namespace proto {
                          * @returns JSON object
                          */
                         public toJSON(): { [k: string]: any };
+
+                        /**
+                         * Gets the default type url for LinkPreviewHighQualityThumbnail
+                         * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                         * @returns The default type url
+                         */
+                        public static getTypeUrl(typeUrlPrefix?: string): string;
                     }
                 }
 
@@ -19046,6 +20132,13 @@ export namespace proto {
                      * @returns JSON object
                      */
                     public toJSON(): { [k: string]: any };
+
+                    /**
+                     * Gets the default type url for PlaceholderMessageResendResponse
+                     * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                     * @returns The default type url
+                     */
+                    public static getTypeUrl(typeUrlPrefix?: string): string;
                 }
             }
         }
@@ -19159,6 +20252,13 @@ export namespace proto {
              * @returns JSON object
              */
             public toJSON(): { [k: string]: any };
+
+            /**
+             * Gets the default type url for PinInChatMessage
+             * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+             * @returns The default type url
+             */
+            public static getTypeUrl(typeUrlPrefix?: string): string;
         }
 
         namespace PinInChatMessage {
@@ -19283,6 +20383,13 @@ export namespace proto {
              * @returns JSON object
              */
             public toJSON(): { [k: string]: any };
+
+            /**
+             * Gets the default type url for PollCreationMessage
+             * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+             * @returns The default type url
+             */
+            public static getTypeUrl(typeUrlPrefix?: string): string;
         }
 
         namespace PollCreationMessage {
@@ -19375,6 +20482,13 @@ export namespace proto {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for Option
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
         }
 
@@ -19472,6 +20586,13 @@ export namespace proto {
              * @returns JSON object
              */
             public toJSON(): { [k: string]: any };
+
+            /**
+             * Gets the default type url for PollEncValue
+             * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+             * @returns The default type url
+             */
+            public static getTypeUrl(typeUrlPrefix?: string): string;
         }
 
         /** Properties of a PollUpdateMessage. */
@@ -19580,6 +20701,13 @@ export namespace proto {
              * @returns JSON object
              */
             public toJSON(): { [k: string]: any };
+
+            /**
+             * Gets the default type url for PollUpdateMessage
+             * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+             * @returns The default type url
+             */
+            public static getTypeUrl(typeUrlPrefix?: string): string;
         }
 
         /** Properties of a PollUpdateMessageMetadata. */
@@ -19664,6 +20792,13 @@ export namespace proto {
              * @returns JSON object
              */
             public toJSON(): { [k: string]: any };
+
+            /**
+             * Gets the default type url for PollUpdateMessageMetadata
+             * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+             * @returns The default type url
+             */
+            public static getTypeUrl(typeUrlPrefix?: string): string;
         }
 
         /** Properties of a PollVoteMessage. */
@@ -19754,6 +20889,13 @@ export namespace proto {
              * @returns JSON object
              */
             public toJSON(): { [k: string]: any };
+
+            /**
+             * Gets the default type url for PollVoteMessage
+             * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+             * @returns The default type url
+             */
+            public static getTypeUrl(typeUrlPrefix?: string): string;
         }
 
         /** Properties of a ProductMessage. */
@@ -19874,6 +21016,13 @@ export namespace proto {
              * @returns JSON object
              */
             public toJSON(): { [k: string]: any };
+
+            /**
+             * Gets the default type url for ProductMessage
+             * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+             * @returns The default type url
+             */
+            public static getTypeUrl(typeUrlPrefix?: string): string;
         }
 
         namespace ProductMessage {
@@ -19978,6 +21127,13 @@ export namespace proto {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for CatalogSnapshot
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
 
             /** Properties of a ProductSnapshot. */
@@ -20128,6 +21284,13 @@ export namespace proto {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for ProductSnapshot
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
         }
 
@@ -20315,6 +21478,13 @@ export namespace proto {
              * @returns JSON object
              */
             public toJSON(): { [k: string]: any };
+
+            /**
+             * Gets the default type url for ProtocolMessage
+             * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+             * @returns The default type url
+             */
+            public static getTypeUrl(typeUrlPrefix?: string): string;
         }
 
         namespace ProtocolMessage {
@@ -20445,6 +21615,13 @@ export namespace proto {
              * @returns JSON object
              */
             public toJSON(): { [k: string]: any };
+
+            /**
+             * Gets the default type url for ReactionMessage
+             * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+             * @returns The default type url
+             */
+            public static getTypeUrl(typeUrlPrefix?: string): string;
         }
 
         /** Properties of a RequestPaymentMessage. */
@@ -20571,6 +21748,13 @@ export namespace proto {
              * @returns JSON object
              */
             public toJSON(): { [k: string]: any };
+
+            /**
+             * Gets the default type url for RequestPaymentMessage
+             * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+             * @returns The default type url
+             */
+            public static getTypeUrl(typeUrlPrefix?: string): string;
         }
 
         /** Properties of a RequestPhoneNumberMessage. */
@@ -20661,6 +21845,13 @@ export namespace proto {
              * @returns JSON object
              */
             public toJSON(): { [k: string]: any };
+
+            /**
+             * Gets the default type url for RequestPhoneNumberMessage
+             * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+             * @returns The default type url
+             */
+            public static getTypeUrl(typeUrlPrefix?: string): string;
         }
 
         /** Properties of a RequestWelcomeMessageMetadata. */
@@ -20751,6 +21942,13 @@ export namespace proto {
              * @returns JSON object
              */
             public toJSON(): { [k: string]: any };
+
+            /**
+             * Gets the default type url for RequestWelcomeMessageMetadata
+             * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+             * @returns The default type url
+             */
+            public static getTypeUrl(typeUrlPrefix?: string): string;
         }
 
         namespace RequestWelcomeMessageMetadata {
@@ -20862,6 +22060,13 @@ export namespace proto {
              * @returns JSON object
              */
             public toJSON(): { [k: string]: any };
+
+            /**
+             * Gets the default type url for ScheduledCallCreationMessage
+             * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+             * @returns The default type url
+             */
+            public static getTypeUrl(typeUrlPrefix?: string): string;
         }
 
         namespace ScheduledCallCreationMessage {
@@ -20968,6 +22173,13 @@ export namespace proto {
              * @returns JSON object
              */
             public toJSON(): { [k: string]: any };
+
+            /**
+             * Gets the default type url for ScheduledCallEditMessage
+             * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+             * @returns The default type url
+             */
+            public static getTypeUrl(typeUrlPrefix?: string): string;
         }
 
         namespace ScheduledCallEditMessage {
@@ -21079,6 +22291,13 @@ export namespace proto {
              * @returns JSON object
              */
             public toJSON(): { [k: string]: any };
+
+            /**
+             * Gets the default type url for SendPaymentMessage
+             * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+             * @returns The default type url
+             */
+            public static getTypeUrl(typeUrlPrefix?: string): string;
         }
 
         /** Properties of a SenderKeyDistributionMessage. */
@@ -21175,6 +22394,13 @@ export namespace proto {
              * @returns JSON object
              */
             public toJSON(): { [k: string]: any };
+
+            /**
+             * Gets the default type url for SenderKeyDistributionMessage
+             * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+             * @returns The default type url
+             */
+            public static getTypeUrl(typeUrlPrefix?: string): string;
         }
 
         /** Properties of a StickerMessage. */
@@ -21373,6 +22599,13 @@ export namespace proto {
              * @returns JSON object
              */
             public toJSON(): { [k: string]: any };
+
+            /**
+             * Gets the default type url for StickerMessage
+             * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+             * @returns The default type url
+             */
+            public static getTypeUrl(typeUrlPrefix?: string): string;
         }
 
         /** Properties of a StickerSyncRMRMessage. */
@@ -21475,6 +22708,13 @@ export namespace proto {
              * @returns JSON object
              */
             public toJSON(): { [k: string]: any };
+
+            /**
+             * Gets the default type url for StickerSyncRMRMessage
+             * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+             * @returns The default type url
+             */
+            public static getTypeUrl(typeUrlPrefix?: string): string;
         }
 
         /** Properties of a TemplateButtonReplyMessage. */
@@ -21589,6 +22829,13 @@ export namespace proto {
              * @returns JSON object
              */
             public toJSON(): { [k: string]: any };
+
+            /**
+             * Gets the default type url for TemplateButtonReplyMessage
+             * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+             * @returns The default type url
+             */
+            public static getTypeUrl(typeUrlPrefix?: string): string;
         }
 
         /** Properties of a TemplateMessage. */
@@ -21712,6 +22959,13 @@ export namespace proto {
              * @returns JSON object
              */
             public toJSON(): { [k: string]: any };
+
+            /**
+             * Gets the default type url for TemplateMessage
+             * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+             * @returns The default type url
+             */
+            public static getTypeUrl(typeUrlPrefix?: string): string;
         }
 
         namespace TemplateMessage {
@@ -21849,6 +23103,13 @@ export namespace proto {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for FourRowTemplate
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
 
             /** Properties of a HydratedFourRowTemplate. */
@@ -21990,6 +23251,13 @@ export namespace proto {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for HydratedFourRowTemplate
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
         }
 
@@ -22219,6 +23487,13 @@ export namespace proto {
              * @returns JSON object
              */
             public toJSON(): { [k: string]: any };
+
+            /**
+             * Gets the default type url for VideoMessage
+             * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+             * @returns The default type url
+             */
+            public static getTypeUrl(typeUrlPrefix?: string): string;
         }
 
         namespace VideoMessage {
@@ -22320,6 +23595,13 @@ export namespace proto {
          * @returns JSON object
          */
         public toJSON(): { [k: string]: any };
+
+        /**
+         * Gets the default type url for MessageAddOnContextInfo
+         * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+         * @returns The default type url
+         */
+        public static getTypeUrl(typeUrlPrefix?: string): string;
     }
 
     /** Properties of a MessageContextInfo. */
@@ -22452,6 +23734,13 @@ export namespace proto {
          * @returns JSON object
          */
         public toJSON(): { [k: string]: any };
+
+        /**
+         * Gets the default type url for MessageContextInfo
+         * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+         * @returns The default type url
+         */
+        public static getTypeUrl(typeUrlPrefix?: string): string;
     }
 
     /** Properties of a MessageKey. */
@@ -22560,6 +23849,13 @@ export namespace proto {
          * @returns JSON object
          */
         public toJSON(): { [k: string]: any };
+
+        /**
+         * Gets the default type url for MessageKey
+         * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+         * @returns The default type url
+         */
+        public static getTypeUrl(typeUrlPrefix?: string): string;
     }
 
     /** Properties of a MessageSecretMessage. */
@@ -22662,6 +23958,13 @@ export namespace proto {
          * @returns JSON object
          */
         public toJSON(): { [k: string]: any };
+
+        /**
+         * Gets the default type url for MessageSecretMessage
+         * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+         * @returns The default type url
+         */
+        public static getTypeUrl(typeUrlPrefix?: string): string;
     }
 
     /** Properties of a Money. */
@@ -22764,6 +24067,13 @@ export namespace proto {
          * @returns JSON object
          */
         public toJSON(): { [k: string]: any };
+
+        /**
+         * Gets the default type url for Money
+         * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+         * @returns The default type url
+         */
+        public static getTypeUrl(typeUrlPrefix?: string): string;
     }
 
     /** Properties of a MsgOpaqueData. */
@@ -23028,6 +24338,13 @@ export namespace proto {
          * @returns JSON object
          */
         public toJSON(): { [k: string]: any };
+
+        /**
+         * Gets the default type url for MsgOpaqueData
+         * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+         * @returns The default type url
+         */
+        public static getTypeUrl(typeUrlPrefix?: string): string;
     }
 
     namespace MsgOpaqueData {
@@ -23120,6 +24437,13 @@ export namespace proto {
              * @returns JSON object
              */
             public toJSON(): { [k: string]: any };
+
+            /**
+             * Gets the default type url for PollOption
+             * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+             * @returns The default type url
+             */
+            public static getTypeUrl(typeUrlPrefix?: string): string;
         }
     }
 
@@ -23217,6 +24541,13 @@ export namespace proto {
          * @returns JSON object
          */
         public toJSON(): { [k: string]: any };
+
+        /**
+         * Gets the default type url for MsgRowOpaqueData
+         * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+         * @returns The default type url
+         */
+        public static getTypeUrl(typeUrlPrefix?: string): string;
     }
 
     /** Properties of a NoiseCertificate. */
@@ -23313,6 +24644,13 @@ export namespace proto {
          * @returns JSON object
          */
         public toJSON(): { [k: string]: any };
+
+        /**
+         * Gets the default type url for NoiseCertificate
+         * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+         * @returns The default type url
+         */
+        public static getTypeUrl(typeUrlPrefix?: string): string;
     }
 
     namespace NoiseCertificate {
@@ -23429,6 +24767,13 @@ export namespace proto {
              * @returns JSON object
              */
             public toJSON(): { [k: string]: any };
+
+            /**
+             * Gets the default type url for Details
+             * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+             * @returns The default type url
+             */
+            public static getTypeUrl(typeUrlPrefix?: string): string;
         }
     }
 
@@ -23538,6 +24883,13 @@ export namespace proto {
          * @returns JSON object
          */
         public toJSON(): { [k: string]: any };
+
+        /**
+         * Gets the default type url for NotificationMessageInfo
+         * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+         * @returns The default type url
+         */
+        public static getTypeUrl(typeUrlPrefix?: string): string;
     }
 
     /** Properties of a NotificationSettings. */
@@ -23658,6 +25010,13 @@ export namespace proto {
          * @returns JSON object
          */
         public toJSON(): { [k: string]: any };
+
+        /**
+         * Gets the default type url for NotificationSettings
+         * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+         * @returns The default type url
+         */
+        public static getTypeUrl(typeUrlPrefix?: string): string;
     }
 
     /** Properties of a PastParticipant. */
@@ -23760,6 +25119,13 @@ export namespace proto {
          * @returns JSON object
          */
         public toJSON(): { [k: string]: any };
+
+        /**
+         * Gets the default type url for PastParticipant
+         * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+         * @returns The default type url
+         */
+        public static getTypeUrl(typeUrlPrefix?: string): string;
     }
 
     namespace PastParticipant {
@@ -23865,6 +25231,13 @@ export namespace proto {
          * @returns JSON object
          */
         public toJSON(): { [k: string]: any };
+
+        /**
+         * Gets the default type url for PastParticipants
+         * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+         * @returns The default type url
+         */
+        public static getTypeUrl(typeUrlPrefix?: string): string;
     }
 
     /** Properties of a PatchDebugData. */
@@ -23979,6 +25352,13 @@ export namespace proto {
          * @returns JSON object
          */
         public toJSON(): { [k: string]: any };
+
+        /**
+         * Gets the default type url for PatchDebugData
+         * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+         * @returns The default type url
+         */
+        public static getTypeUrl(typeUrlPrefix?: string): string;
     }
 
     /** Properties of a PaymentBackground. */
@@ -24123,6 +25503,13 @@ export namespace proto {
          * @returns JSON object
          */
         public toJSON(): { [k: string]: any };
+
+        /**
+         * Gets the default type url for PaymentBackground
+         * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+         * @returns The default type url
+         */
+        public static getTypeUrl(typeUrlPrefix?: string): string;
     }
 
     namespace PaymentBackground {
@@ -24239,6 +25626,13 @@ export namespace proto {
              * @returns JSON object
              */
             public toJSON(): { [k: string]: any };
+
+            /**
+             * Gets the default type url for MediaData
+             * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+             * @returns The default type url
+             */
+            public static getTypeUrl(typeUrlPrefix?: string): string;
         }
 
         /** Type enum. */
@@ -24408,6 +25802,13 @@ export namespace proto {
          * @returns JSON object
          */
         public toJSON(): { [k: string]: any };
+
+        /**
+         * Gets the default type url for PaymentInfo
+         * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+         * @returns The default type url
+         */
+        public static getTypeUrl(typeUrlPrefix?: string): string;
     }
 
     namespace PaymentInfo {
@@ -24571,6 +25972,13 @@ export namespace proto {
          * @returns JSON object
          */
         public toJSON(): { [k: string]: any };
+
+        /**
+         * Gets the default type url for PhotoChange
+         * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+         * @returns The default type url
+         */
+        public static getTypeUrl(typeUrlPrefix?: string): string;
     }
 
     /** Properties of a PinInChat. */
@@ -24685,6 +26093,13 @@ export namespace proto {
          * @returns JSON object
          */
         public toJSON(): { [k: string]: any };
+
+        /**
+         * Gets the default type url for PinInChat
+         * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+         * @returns The default type url
+         */
+        public static getTypeUrl(typeUrlPrefix?: string): string;
     }
 
     namespace PinInChat {
@@ -24803,6 +26218,13 @@ export namespace proto {
          * @returns JSON object
          */
         public toJSON(): { [k: string]: any };
+
+        /**
+         * Gets the default type url for Point
+         * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+         * @returns The default type url
+         */
+        public static getTypeUrl(typeUrlPrefix?: string): string;
     }
 
     /** Properties of a PollAdditionalMetadata. */
@@ -24893,6 +26315,13 @@ export namespace proto {
          * @returns JSON object
          */
         public toJSON(): { [k: string]: any };
+
+        /**
+         * Gets the default type url for PollAdditionalMetadata
+         * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+         * @returns The default type url
+         */
+        public static getTypeUrl(typeUrlPrefix?: string): string;
     }
 
     /** Properties of a PollEncValue. */
@@ -24989,6 +26418,13 @@ export namespace proto {
          * @returns JSON object
          */
         public toJSON(): { [k: string]: any };
+
+        /**
+         * Gets the default type url for PollEncValue
+         * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+         * @returns The default type url
+         */
+        public static getTypeUrl(typeUrlPrefix?: string): string;
     }
 
     /** Properties of a PollUpdate. */
@@ -25103,6 +26539,13 @@ export namespace proto {
          * @returns JSON object
          */
         public toJSON(): { [k: string]: any };
+
+        /**
+         * Gets the default type url for PollUpdate
+         * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+         * @returns The default type url
+         */
+        public static getTypeUrl(typeUrlPrefix?: string): string;
     }
 
     /** Properties of a PreKeyRecordStructure. */
@@ -25205,6 +26648,13 @@ export namespace proto {
          * @returns JSON object
          */
         public toJSON(): { [k: string]: any };
+
+        /**
+         * Gets the default type url for PreKeyRecordStructure
+         * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+         * @returns The default type url
+         */
+        public static getTypeUrl(typeUrlPrefix?: string): string;
     }
 
     /** Properties of a PreKeySignalMessage. */
@@ -25325,6 +26775,13 @@ export namespace proto {
          * @returns JSON object
          */
         public toJSON(): { [k: string]: any };
+
+        /**
+         * Gets the default type url for PreKeySignalMessage
+         * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+         * @returns The default type url
+         */
+        public static getTypeUrl(typeUrlPrefix?: string): string;
     }
 
     /** Properties of a PremiumMessageInfo. */
@@ -25415,6 +26872,13 @@ export namespace proto {
          * @returns JSON object
          */
         public toJSON(): { [k: string]: any };
+
+        /**
+         * Gets the default type url for PremiumMessageInfo
+         * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+         * @returns The default type url
+         */
+        public static getTypeUrl(typeUrlPrefix?: string): string;
     }
 
     /** Properties of a Pushname. */
@@ -25511,6 +26975,13 @@ export namespace proto {
          * @returns JSON object
          */
         public toJSON(): { [k: string]: any };
+
+        /**
+         * Gets the default type url for Pushname
+         * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+         * @returns The default type url
+         */
+        public static getTypeUrl(typeUrlPrefix?: string): string;
     }
 
     /** Properties of a QP. */
@@ -25595,6 +27066,13 @@ export namespace proto {
          * @returns JSON object
          */
         public toJSON(): { [k: string]: any };
+
+        /**
+         * Gets the default type url for QP
+         * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+         * @returns The default type url
+         */
+        public static getTypeUrl(typeUrlPrefix?: string): string;
     }
 
     namespace QP {
@@ -25712,6 +27190,13 @@ export namespace proto {
              * @returns JSON object
              */
             public toJSON(): { [k: string]: any };
+
+            /**
+             * Gets the default type url for Filter
+             * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+             * @returns The default type url
+             */
+            public static getTypeUrl(typeUrlPrefix?: string): string;
         }
 
         /** Properties of a FilterClause. */
@@ -25814,6 +27299,13 @@ export namespace proto {
              * @returns JSON object
              */
             public toJSON(): { [k: string]: any };
+
+            /**
+             * Gets the default type url for FilterClause
+             * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+             * @returns The default type url
+             */
+            public static getTypeUrl(typeUrlPrefix?: string): string;
         }
 
         /** FilterClientNotSupportedConfig enum. */
@@ -25916,6 +27408,13 @@ export namespace proto {
              * @returns JSON object
              */
             public toJSON(): { [k: string]: any };
+
+            /**
+             * Gets the default type url for FilterParameters
+             * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+             * @returns The default type url
+             */
+            public static getTypeUrl(typeUrlPrefix?: string): string;
         }
 
         /** FilterResult enum. */
@@ -26038,6 +27537,13 @@ export namespace proto {
          * @returns JSON object
          */
         public toJSON(): { [k: string]: any };
+
+        /**
+         * Gets the default type url for Reaction
+         * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+         * @returns The default type url
+         */
+        public static getTypeUrl(typeUrlPrefix?: string): string;
     }
 
     /** Properties of a RecentEmojiWeight. */
@@ -26134,6 +27640,13 @@ export namespace proto {
          * @returns JSON object
          */
         public toJSON(): { [k: string]: any };
+
+        /**
+         * Gets the default type url for RecentEmojiWeight
+         * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+         * @returns The default type url
+         */
+        public static getTypeUrl(typeUrlPrefix?: string): string;
     }
 
     /** Properties of a RecordStructure. */
@@ -26230,6 +27743,13 @@ export namespace proto {
          * @returns JSON object
          */
         public toJSON(): { [k: string]: any };
+
+        /**
+         * Gets the default type url for RecordStructure
+         * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+         * @returns The default type url
+         */
+        public static getTypeUrl(typeUrlPrefix?: string): string;
     }
 
     /** Properties of a ReportingTokenInfo. */
@@ -26320,6 +27840,13 @@ export namespace proto {
          * @returns JSON object
          */
         public toJSON(): { [k: string]: any };
+
+        /**
+         * Gets the default type url for ReportingTokenInfo
+         * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+         * @returns The default type url
+         */
+        public static getTypeUrl(typeUrlPrefix?: string): string;
     }
 
     /** Properties of a SenderKeyDistributionMessage. */
@@ -26428,6 +27955,13 @@ export namespace proto {
          * @returns JSON object
          */
         public toJSON(): { [k: string]: any };
+
+        /**
+         * Gets the default type url for SenderKeyDistributionMessage
+         * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+         * @returns The default type url
+         */
+        public static getTypeUrl(typeUrlPrefix?: string): string;
     }
 
     /** Properties of a SenderKeyMessage. */
@@ -26530,6 +28064,13 @@ export namespace proto {
          * @returns JSON object
          */
         public toJSON(): { [k: string]: any };
+
+        /**
+         * Gets the default type url for SenderKeyMessage
+         * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+         * @returns The default type url
+         */
+        public static getTypeUrl(typeUrlPrefix?: string): string;
     }
 
     /** Properties of a SenderKeyRecordStructure. */
@@ -26620,6 +28161,13 @@ export namespace proto {
          * @returns JSON object
          */
         public toJSON(): { [k: string]: any };
+
+        /**
+         * Gets the default type url for SenderKeyRecordStructure
+         * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+         * @returns The default type url
+         */
+        public static getTypeUrl(typeUrlPrefix?: string): string;
     }
 
     /** Properties of a SenderKeyStateStructure. */
@@ -26728,6 +28276,13 @@ export namespace proto {
          * @returns JSON object
          */
         public toJSON(): { [k: string]: any };
+
+        /**
+         * Gets the default type url for SenderKeyStateStructure
+         * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+         * @returns The default type url
+         */
+        public static getTypeUrl(typeUrlPrefix?: string): string;
     }
 
     namespace SenderKeyStateStructure {
@@ -26826,6 +28381,13 @@ export namespace proto {
              * @returns JSON object
              */
             public toJSON(): { [k: string]: any };
+
+            /**
+             * Gets the default type url for SenderChainKey
+             * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+             * @returns The default type url
+             */
+            public static getTypeUrl(typeUrlPrefix?: string): string;
         }
 
         /** Properties of a SenderMessageKey. */
@@ -26922,6 +28484,13 @@ export namespace proto {
              * @returns JSON object
              */
             public toJSON(): { [k: string]: any };
+
+            /**
+             * Gets the default type url for SenderMessageKey
+             * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+             * @returns The default type url
+             */
+            public static getTypeUrl(typeUrlPrefix?: string): string;
         }
 
         /** Properties of a SenderSigningKey. */
@@ -27018,6 +28587,13 @@ export namespace proto {
              * @returns JSON object
              */
             public toJSON(): { [k: string]: any };
+
+            /**
+             * Gets the default type url for SenderSigningKey
+             * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+             * @returns The default type url
+             */
+            public static getTypeUrl(typeUrlPrefix?: string): string;
         }
     }
 
@@ -27109,6 +28685,13 @@ export namespace proto {
          * @returns JSON object
          */
         public toJSON(): { [k: string]: any };
+
+        /**
+         * Gets the default type url for ServerErrorReceipt
+         * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+         * @returns The default type url
+         */
+        public static getTypeUrl(typeUrlPrefix?: string): string;
     }
 
     /** Properties of a SessionStructure. */
@@ -27271,6 +28854,13 @@ export namespace proto {
          * @returns JSON object
          */
         public toJSON(): { [k: string]: any };
+
+        /**
+         * Gets the default type url for SessionStructure
+         * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+         * @returns The default type url
+         */
+        public static getTypeUrl(typeUrlPrefix?: string): string;
     }
 
     namespace SessionStructure {
@@ -27381,6 +28971,13 @@ export namespace proto {
              * @returns JSON object
              */
             public toJSON(): { [k: string]: any };
+
+            /**
+             * Gets the default type url for Chain
+             * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+             * @returns The default type url
+             */
+            public static getTypeUrl(typeUrlPrefix?: string): string;
         }
 
         namespace Chain {
@@ -27479,6 +29076,13 @@ export namespace proto {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for ChainKey
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
 
             /** Properties of a MessageKey. */
@@ -27587,6 +29191,13 @@ export namespace proto {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for MessageKey
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
         }
 
@@ -27714,6 +29325,13 @@ export namespace proto {
              * @returns JSON object
              */
             public toJSON(): { [k: string]: any };
+
+            /**
+             * Gets the default type url for PendingKeyExchange
+             * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+             * @returns The default type url
+             */
+            public static getTypeUrl(typeUrlPrefix?: string): string;
         }
 
         /** Properties of a PendingPreKey. */
@@ -27816,6 +29434,13 @@ export namespace proto {
              * @returns JSON object
              */
             public toJSON(): { [k: string]: any };
+
+            /**
+             * Gets the default type url for PendingPreKey
+             * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+             * @returns The default type url
+             */
+            public static getTypeUrl(typeUrlPrefix?: string): string;
         }
     }
 
@@ -27925,6 +29550,13 @@ export namespace proto {
          * @returns JSON object
          */
         public toJSON(): { [k: string]: any };
+
+        /**
+         * Gets the default type url for SignalMessage
+         * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+         * @returns The default type url
+         */
+        public static getTypeUrl(typeUrlPrefix?: string): string;
     }
 
     /** Properties of a SignedPreKeyRecordStructure. */
@@ -28039,6 +29671,13 @@ export namespace proto {
          * @returns JSON object
          */
         public toJSON(): { [k: string]: any };
+
+        /**
+         * Gets the default type url for SignedPreKeyRecordStructure
+         * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+         * @returns The default type url
+         */
+        public static getTypeUrl(typeUrlPrefix?: string): string;
     }
 
     /** Properties of a StatusPSA. */
@@ -28135,6 +29774,13 @@ export namespace proto {
          * @returns JSON object
          */
         public toJSON(): { [k: string]: any };
+
+        /**
+         * Gets the default type url for StatusPSA
+         * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+         * @returns The default type url
+         */
+        public static getTypeUrl(typeUrlPrefix?: string): string;
     }
 
     /** Properties of a StickerMetadata. */
@@ -28285,6 +29931,13 @@ export namespace proto {
          * @returns JSON object
          */
         public toJSON(): { [k: string]: any };
+
+        /**
+         * Gets the default type url for StickerMetadata
+         * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+         * @returns The default type url
+         */
+        public static getTypeUrl(typeUrlPrefix?: string): string;
     }
 
     /** Properties of a SyncActionData. */
@@ -28393,6 +30046,13 @@ export namespace proto {
          * @returns JSON object
          */
         public toJSON(): { [k: string]: any };
+
+        /**
+         * Gets the default type url for SyncActionData
+         * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+         * @returns The default type url
+         */
+        public static getTypeUrl(typeUrlPrefix?: string): string;
     }
 
     /** Properties of a SyncActionValue. */
@@ -28520,6 +30180,9 @@ export namespace proto {
 
         /** SyncActionValue labelReorderingAction */
         labelReorderingAction?: (proto.SyncActionValue.ILabelReorderingAction|null);
+
+        /** SyncActionValue paymentInfoAction */
+        paymentInfoAction?: (proto.SyncActionValue.IPaymentInfoAction|null);
     }
 
     /** Represents a SyncActionValue. */
@@ -28654,6 +30317,9 @@ export namespace proto {
         /** SyncActionValue labelReorderingAction. */
         public labelReorderingAction?: (proto.SyncActionValue.ILabelReorderingAction|null);
 
+        /** SyncActionValue paymentInfoAction. */
+        public paymentInfoAction?: (proto.SyncActionValue.IPaymentInfoAction|null);
+
         /**
          * Creates a new SyncActionValue instance using the specified properties.
          * @param [properties] Properties to set
@@ -28723,6 +30389,13 @@ export namespace proto {
          * @returns JSON object
          */
         public toJSON(): { [k: string]: any };
+
+        /**
+         * Gets the default type url for SyncActionValue
+         * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+         * @returns The default type url
+         */
+        public static getTypeUrl(typeUrlPrefix?: string): string;
     }
 
     namespace SyncActionValue {
@@ -28827,6 +30500,13 @@ export namespace proto {
              * @returns JSON object
              */
             public toJSON(): { [k: string]: any };
+
+            /**
+             * Gets the default type url for AgentAction
+             * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+             * @returns The default type url
+             */
+            public static getTypeUrl(typeUrlPrefix?: string): string;
         }
 
         /** Properties of an AndroidUnsupportedActions. */
@@ -28917,6 +30597,13 @@ export namespace proto {
              * @returns JSON object
              */
             public toJSON(): { [k: string]: any };
+
+            /**
+             * Gets the default type url for AndroidUnsupportedActions
+             * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+             * @returns The default type url
+             */
+            public static getTypeUrl(typeUrlPrefix?: string): string;
         }
 
         /** Properties of an ArchiveChatAction. */
@@ -29013,6 +30700,13 @@ export namespace proto {
              * @returns JSON object
              */
             public toJSON(): { [k: string]: any };
+
+            /**
+             * Gets the default type url for ArchiveChatAction
+             * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+             * @returns The default type url
+             */
+            public static getTypeUrl(typeUrlPrefix?: string): string;
         }
 
         /** Properties of a BotWelcomeRequestAction. */
@@ -29103,6 +30797,13 @@ export namespace proto {
              * @returns JSON object
              */
             public toJSON(): { [k: string]: any };
+
+            /**
+             * Gets the default type url for BotWelcomeRequestAction
+             * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+             * @returns The default type url
+             */
+            public static getTypeUrl(typeUrlPrefix?: string): string;
         }
 
         /** Properties of a CallLogAction. */
@@ -29193,6 +30894,13 @@ export namespace proto {
              * @returns JSON object
              */
             public toJSON(): { [k: string]: any };
+
+            /**
+             * Gets the default type url for CallLogAction
+             * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+             * @returns The default type url
+             */
+            public static getTypeUrl(typeUrlPrefix?: string): string;
         }
 
         /** Properties of a ChatAssignmentAction. */
@@ -29283,6 +30991,13 @@ export namespace proto {
              * @returns JSON object
              */
             public toJSON(): { [k: string]: any };
+
+            /**
+             * Gets the default type url for ChatAssignmentAction
+             * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+             * @returns The default type url
+             */
+            public static getTypeUrl(typeUrlPrefix?: string): string;
         }
 
         /** Properties of a ChatAssignmentOpenedStatusAction. */
@@ -29373,6 +31088,13 @@ export namespace proto {
              * @returns JSON object
              */
             public toJSON(): { [k: string]: any };
+
+            /**
+             * Gets the default type url for ChatAssignmentOpenedStatusAction
+             * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+             * @returns The default type url
+             */
+            public static getTypeUrl(typeUrlPrefix?: string): string;
         }
 
         /** Properties of a ClearChatAction. */
@@ -29463,6 +31185,13 @@ export namespace proto {
              * @returns JSON object
              */
             public toJSON(): { [k: string]: any };
+
+            /**
+             * Gets the default type url for ClearChatAction
+             * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+             * @returns The default type url
+             */
+            public static getTypeUrl(typeUrlPrefix?: string): string;
         }
 
         /** Properties of a ContactAction. */
@@ -29571,6 +31300,13 @@ export namespace proto {
              * @returns JSON object
              */
             public toJSON(): { [k: string]: any };
+
+            /**
+             * Gets the default type url for ContactAction
+             * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+             * @returns The default type url
+             */
+            public static getTypeUrl(typeUrlPrefix?: string): string;
         }
 
         /** Properties of a DeleteChatAction. */
@@ -29661,6 +31397,13 @@ export namespace proto {
              * @returns JSON object
              */
             public toJSON(): { [k: string]: any };
+
+            /**
+             * Gets the default type url for DeleteChatAction
+             * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+             * @returns The default type url
+             */
+            public static getTypeUrl(typeUrlPrefix?: string): string;
         }
 
         /** Properties of a DeleteIndividualCallLogAction. */
@@ -29757,6 +31500,13 @@ export namespace proto {
              * @returns JSON object
              */
             public toJSON(): { [k: string]: any };
+
+            /**
+             * Gets the default type url for DeleteIndividualCallLogAction
+             * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+             * @returns The default type url
+             */
+            public static getTypeUrl(typeUrlPrefix?: string): string;
         }
 
         /** Properties of a DeleteMessageForMeAction. */
@@ -29853,6 +31603,13 @@ export namespace proto {
              * @returns JSON object
              */
             public toJSON(): { [k: string]: any };
+
+            /**
+             * Gets the default type url for DeleteMessageForMeAction
+             * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+             * @returns The default type url
+             */
+            public static getTypeUrl(typeUrlPrefix?: string): string;
         }
 
         /** Properties of an ExternalWebBetaAction. */
@@ -29943,6 +31700,13 @@ export namespace proto {
              * @returns JSON object
              */
             public toJSON(): { [k: string]: any };
+
+            /**
+             * Gets the default type url for ExternalWebBetaAction
+             * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+             * @returns The default type url
+             */
+            public static getTypeUrl(typeUrlPrefix?: string): string;
         }
 
         /** Properties of a KeyExpiration. */
@@ -30033,6 +31797,13 @@ export namespace proto {
              * @returns JSON object
              */
             public toJSON(): { [k: string]: any };
+
+            /**
+             * Gets the default type url for KeyExpiration
+             * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+             * @returns The default type url
+             */
+            public static getTypeUrl(typeUrlPrefix?: string): string;
         }
 
         /** Properties of a LabelAssociationAction. */
@@ -30123,6 +31894,13 @@ export namespace proto {
              * @returns JSON object
              */
             public toJSON(): { [k: string]: any };
+
+            /**
+             * Gets the default type url for LabelAssociationAction
+             * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+             * @returns The default type url
+             */
+            public static getTypeUrl(typeUrlPrefix?: string): string;
         }
 
         /** Properties of a LabelEditAction. */
@@ -30237,6 +32015,13 @@ export namespace proto {
              * @returns JSON object
              */
             public toJSON(): { [k: string]: any };
+
+            /**
+             * Gets the default type url for LabelEditAction
+             * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+             * @returns The default type url
+             */
+            public static getTypeUrl(typeUrlPrefix?: string): string;
         }
 
         /** Properties of a LabelReorderingAction. */
@@ -30327,6 +32112,13 @@ export namespace proto {
              * @returns JSON object
              */
             public toJSON(): { [k: string]: any };
+
+            /**
+             * Gets the default type url for LabelReorderingAction
+             * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+             * @returns The default type url
+             */
+            public static getTypeUrl(typeUrlPrefix?: string): string;
         }
 
         /** Properties of a LocaleSetting. */
@@ -30417,6 +32209,13 @@ export namespace proto {
              * @returns JSON object
              */
             public toJSON(): { [k: string]: any };
+
+            /**
+             * Gets the default type url for LocaleSetting
+             * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+             * @returns The default type url
+             */
+            public static getTypeUrl(typeUrlPrefix?: string): string;
         }
 
         /** Properties of a MarkChatAsReadAction. */
@@ -30513,6 +32312,13 @@ export namespace proto {
              * @returns JSON object
              */
             public toJSON(): { [k: string]: any };
+
+            /**
+             * Gets the default type url for MarkChatAsReadAction
+             * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+             * @returns The default type url
+             */
+            public static getTypeUrl(typeUrlPrefix?: string): string;
         }
 
         /** Properties of a MarketingMessageAction. */
@@ -30639,6 +32445,13 @@ export namespace proto {
              * @returns JSON object
              */
             public toJSON(): { [k: string]: any };
+
+            /**
+             * Gets the default type url for MarketingMessageAction
+             * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+             * @returns The default type url
+             */
+            public static getTypeUrl(typeUrlPrefix?: string): string;
         }
 
         namespace MarketingMessageAction {
@@ -30737,6 +32550,13 @@ export namespace proto {
              * @returns JSON object
              */
             public toJSON(): { [k: string]: any };
+
+            /**
+             * Gets the default type url for MarketingMessageBroadcastAction
+             * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+             * @returns The default type url
+             */
+            public static getTypeUrl(typeUrlPrefix?: string): string;
         }
 
         /** Properties of a MuteAction. */
@@ -30839,6 +32659,13 @@ export namespace proto {
              * @returns JSON object
              */
             public toJSON(): { [k: string]: any };
+
+            /**
+             * Gets the default type url for MuteAction
+             * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+             * @returns The default type url
+             */
+            public static getTypeUrl(typeUrlPrefix?: string): string;
         }
 
         /** Properties of a NuxAction. */
@@ -30929,6 +32756,110 @@ export namespace proto {
              * @returns JSON object
              */
             public toJSON(): { [k: string]: any };
+
+            /**
+             * Gets the default type url for NuxAction
+             * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+             * @returns The default type url
+             */
+            public static getTypeUrl(typeUrlPrefix?: string): string;
+        }
+
+        /** Properties of a PaymentInfoAction. */
+        interface IPaymentInfoAction {
+
+            /** PaymentInfoAction cpi */
+            cpi?: (string|null);
+        }
+
+        /** Represents a PaymentInfoAction. */
+        class PaymentInfoAction implements IPaymentInfoAction {
+
+            /**
+             * Constructs a new PaymentInfoAction.
+             * @param [properties] Properties to set
+             */
+            constructor(properties?: proto.SyncActionValue.IPaymentInfoAction);
+
+            /** PaymentInfoAction cpi. */
+            public cpi: string;
+
+            /**
+             * Creates a new PaymentInfoAction instance using the specified properties.
+             * @param [properties] Properties to set
+             * @returns PaymentInfoAction instance
+             */
+            public static create(properties?: proto.SyncActionValue.IPaymentInfoAction): proto.SyncActionValue.PaymentInfoAction;
+
+            /**
+             * Encodes the specified PaymentInfoAction message. Does not implicitly {@link proto.SyncActionValue.PaymentInfoAction.verify|verify} messages.
+             * @param message PaymentInfoAction message or plain object to encode
+             * @param [writer] Writer to encode to
+             * @returns Writer
+             */
+            public static encode(message: proto.SyncActionValue.IPaymentInfoAction, writer?: $protobuf.Writer): $protobuf.Writer;
+
+            /**
+             * Encodes the specified PaymentInfoAction message, length delimited. Does not implicitly {@link proto.SyncActionValue.PaymentInfoAction.verify|verify} messages.
+             * @param message PaymentInfoAction message or plain object to encode
+             * @param [writer] Writer to encode to
+             * @returns Writer
+             */
+            public static encodeDelimited(message: proto.SyncActionValue.IPaymentInfoAction, writer?: $protobuf.Writer): $protobuf.Writer;
+
+            /**
+             * Decodes a PaymentInfoAction message from the specified reader or buffer.
+             * @param reader Reader or buffer to decode from
+             * @param [length] Message length if known beforehand
+             * @returns PaymentInfoAction
+             * @throws {Error} If the payload is not a reader or valid buffer
+             * @throws {$protobuf.util.ProtocolError} If required fields are missing
+             */
+            public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): proto.SyncActionValue.PaymentInfoAction;
+
+            /**
+             * Decodes a PaymentInfoAction message from the specified reader or buffer, length delimited.
+             * @param reader Reader or buffer to decode from
+             * @returns PaymentInfoAction
+             * @throws {Error} If the payload is not a reader or valid buffer
+             * @throws {$protobuf.util.ProtocolError} If required fields are missing
+             */
+            public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): proto.SyncActionValue.PaymentInfoAction;
+
+            /**
+             * Verifies a PaymentInfoAction message.
+             * @param message Plain object to verify
+             * @returns `null` if valid, otherwise the reason why it is not
+             */
+            public static verify(message: { [k: string]: any }): (string|null);
+
+            /**
+             * Creates a PaymentInfoAction message from a plain object. Also converts values to their respective internal types.
+             * @param object Plain object
+             * @returns PaymentInfoAction
+             */
+            public static fromObject(object: { [k: string]: any }): proto.SyncActionValue.PaymentInfoAction;
+
+            /**
+             * Creates a plain object from a PaymentInfoAction message. Also converts values to other types if specified.
+             * @param message PaymentInfoAction
+             * @param [options] Conversion options
+             * @returns Plain object
+             */
+            public static toObject(message: proto.SyncActionValue.PaymentInfoAction, options?: $protobuf.IConversionOptions): { [k: string]: any };
+
+            /**
+             * Converts this PaymentInfoAction to JSON.
+             * @returns JSON object
+             */
+            public toJSON(): { [k: string]: any };
+
+            /**
+             * Gets the default type url for PaymentInfoAction
+             * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+             * @returns The default type url
+             */
+            public static getTypeUrl(typeUrlPrefix?: string): string;
         }
 
         /** Properties of a PinAction. */
@@ -31019,6 +32950,13 @@ export namespace proto {
              * @returns JSON object
              */
             public toJSON(): { [k: string]: any };
+
+            /**
+             * Gets the default type url for PinAction
+             * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+             * @returns The default type url
+             */
+            public static getTypeUrl(typeUrlPrefix?: string): string;
         }
 
         /** Properties of a PnForLidChatAction. */
@@ -31109,6 +33047,13 @@ export namespace proto {
              * @returns JSON object
              */
             public toJSON(): { [k: string]: any };
+
+            /**
+             * Gets the default type url for PnForLidChatAction
+             * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+             * @returns The default type url
+             */
+            public static getTypeUrl(typeUrlPrefix?: string): string;
         }
 
         /** Properties of a PrimaryFeature. */
@@ -31199,6 +33144,13 @@ export namespace proto {
              * @returns JSON object
              */
             public toJSON(): { [k: string]: any };
+
+            /**
+             * Gets the default type url for PrimaryFeature
+             * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+             * @returns The default type url
+             */
+            public static getTypeUrl(typeUrlPrefix?: string): string;
         }
 
         /** Properties of a PrimaryVersionAction. */
@@ -31289,6 +33241,13 @@ export namespace proto {
              * @returns JSON object
              */
             public toJSON(): { [k: string]: any };
+
+            /**
+             * Gets the default type url for PrimaryVersionAction
+             * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+             * @returns The default type url
+             */
+            public static getTypeUrl(typeUrlPrefix?: string): string;
         }
 
         /** Properties of a PrivacySettingRelayAllCalls. */
@@ -31379,6 +33338,13 @@ export namespace proto {
              * @returns JSON object
              */
             public toJSON(): { [k: string]: any };
+
+            /**
+             * Gets the default type url for PrivacySettingRelayAllCalls
+             * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+             * @returns The default type url
+             */
+            public static getTypeUrl(typeUrlPrefix?: string): string;
         }
 
         /** Properties of a PushNameSetting. */
@@ -31469,6 +33435,13 @@ export namespace proto {
              * @returns JSON object
              */
             public toJSON(): { [k: string]: any };
+
+            /**
+             * Gets the default type url for PushNameSetting
+             * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+             * @returns The default type url
+             */
+            public static getTypeUrl(typeUrlPrefix?: string): string;
         }
 
         /** Properties of a QuickReplyAction. */
@@ -31583,6 +33556,13 @@ export namespace proto {
              * @returns JSON object
              */
             public toJSON(): { [k: string]: any };
+
+            /**
+             * Gets the default type url for QuickReplyAction
+             * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+             * @returns The default type url
+             */
+            public static getTypeUrl(typeUrlPrefix?: string): string;
         }
 
         /** Properties of a RecentEmojiWeightsAction. */
@@ -31673,6 +33653,13 @@ export namespace proto {
              * @returns JSON object
              */
             public toJSON(): { [k: string]: any };
+
+            /**
+             * Gets the default type url for RecentEmojiWeightsAction
+             * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+             * @returns The default type url
+             */
+            public static getTypeUrl(typeUrlPrefix?: string): string;
         }
 
         /** Properties of a RemoveRecentStickerAction. */
@@ -31763,6 +33750,13 @@ export namespace proto {
              * @returns JSON object
              */
             public toJSON(): { [k: string]: any };
+
+            /**
+             * Gets the default type url for RemoveRecentStickerAction
+             * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+             * @returns The default type url
+             */
+            public static getTypeUrl(typeUrlPrefix?: string): string;
         }
 
         /** Properties of a SecurityNotificationSetting. */
@@ -31853,6 +33847,13 @@ export namespace proto {
              * @returns JSON object
              */
             public toJSON(): { [k: string]: any };
+
+            /**
+             * Gets the default type url for SecurityNotificationSetting
+             * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+             * @returns The default type url
+             */
+            public static getTypeUrl(typeUrlPrefix?: string): string;
         }
 
         /** Properties of a StarAction. */
@@ -31943,6 +33944,13 @@ export namespace proto {
              * @returns JSON object
              */
             public toJSON(): { [k: string]: any };
+
+            /**
+             * Gets the default type url for StarAction
+             * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+             * @returns The default type url
+             */
+            public static getTypeUrl(typeUrlPrefix?: string): string;
         }
 
         /** Properties of a StatusPrivacyAction. */
@@ -32039,6 +34047,13 @@ export namespace proto {
              * @returns JSON object
              */
             public toJSON(): { [k: string]: any };
+
+            /**
+             * Gets the default type url for StatusPrivacyAction
+             * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+             * @returns The default type url
+             */
+            public static getTypeUrl(typeUrlPrefix?: string): string;
         }
 
         namespace StatusPrivacyAction {
@@ -32193,6 +34208,13 @@ export namespace proto {
              * @returns JSON object
              */
             public toJSON(): { [k: string]: any };
+
+            /**
+             * Gets the default type url for StickerAction
+             * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+             * @returns The default type url
+             */
+            public static getTypeUrl(typeUrlPrefix?: string): string;
         }
 
         /** Properties of a SubscriptionAction. */
@@ -32295,6 +34317,13 @@ export namespace proto {
              * @returns JSON object
              */
             public toJSON(): { [k: string]: any };
+
+            /**
+             * Gets the default type url for SubscriptionAction
+             * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+             * @returns The default type url
+             */
+            public static getTypeUrl(typeUrlPrefix?: string): string;
         }
 
         /** Properties of a SyncActionMessage. */
@@ -32391,6 +34420,13 @@ export namespace proto {
              * @returns JSON object
              */
             public toJSON(): { [k: string]: any };
+
+            /**
+             * Gets the default type url for SyncActionMessage
+             * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+             * @returns The default type url
+             */
+            public static getTypeUrl(typeUrlPrefix?: string): string;
         }
 
         /** Properties of a SyncActionMessageRange. */
@@ -32493,6 +34529,13 @@ export namespace proto {
              * @returns JSON object
              */
             public toJSON(): { [k: string]: any };
+
+            /**
+             * Gets the default type url for SyncActionMessageRange
+             * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+             * @returns The default type url
+             */
+            public static getTypeUrl(typeUrlPrefix?: string): string;
         }
 
         /** Properties of a TimeFormatAction. */
@@ -32583,6 +34626,13 @@ export namespace proto {
              * @returns JSON object
              */
             public toJSON(): { [k: string]: any };
+
+            /**
+             * Gets the default type url for TimeFormatAction
+             * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+             * @returns The default type url
+             */
+            public static getTypeUrl(typeUrlPrefix?: string): string;
         }
 
         /** Properties of an UnarchiveChatsSetting. */
@@ -32673,6 +34723,13 @@ export namespace proto {
              * @returns JSON object
              */
             public toJSON(): { [k: string]: any };
+
+            /**
+             * Gets the default type url for UnarchiveChatsSetting
+             * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+             * @returns The default type url
+             */
+            public static getTypeUrl(typeUrlPrefix?: string): string;
         }
 
         /** Properties of a UserStatusMuteAction. */
@@ -32763,6 +34820,13 @@ export namespace proto {
              * @returns JSON object
              */
             public toJSON(): { [k: string]: any };
+
+            /**
+             * Gets the default type url for UserStatusMuteAction
+             * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+             * @returns The default type url
+             */
+            public static getTypeUrl(typeUrlPrefix?: string): string;
         }
     }
 
@@ -32854,6 +34918,13 @@ export namespace proto {
          * @returns JSON object
          */
         public toJSON(): { [k: string]: any };
+
+        /**
+         * Gets the default type url for SyncdIndex
+         * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+         * @returns The default type url
+         */
+        public static getTypeUrl(typeUrlPrefix?: string): string;
     }
 
     /** Properties of a SyncdMutation. */
@@ -32950,6 +35021,13 @@ export namespace proto {
          * @returns JSON object
          */
         public toJSON(): { [k: string]: any };
+
+        /**
+         * Gets the default type url for SyncdMutation
+         * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+         * @returns The default type url
+         */
+        public static getTypeUrl(typeUrlPrefix?: string): string;
     }
 
     namespace SyncdMutation {
@@ -33049,6 +35127,13 @@ export namespace proto {
          * @returns JSON object
          */
         public toJSON(): { [k: string]: any };
+
+        /**
+         * Gets the default type url for SyncdMutations
+         * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+         * @returns The default type url
+         */
+        public static getTypeUrl(typeUrlPrefix?: string): string;
     }
 
     /** Properties of a SyncdPatch. */
@@ -33187,6 +35272,13 @@ export namespace proto {
          * @returns JSON object
          */
         public toJSON(): { [k: string]: any };
+
+        /**
+         * Gets the default type url for SyncdPatch
+         * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+         * @returns The default type url
+         */
+        public static getTypeUrl(typeUrlPrefix?: string): string;
     }
 
     /** Properties of a SyncdRecord. */
@@ -33289,6 +35381,13 @@ export namespace proto {
          * @returns JSON object
          */
         public toJSON(): { [k: string]: any };
+
+        /**
+         * Gets the default type url for SyncdRecord
+         * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+         * @returns The default type url
+         */
+        public static getTypeUrl(typeUrlPrefix?: string): string;
     }
 
     /** Properties of a SyncdSnapshot. */
@@ -33397,6 +35496,13 @@ export namespace proto {
          * @returns JSON object
          */
         public toJSON(): { [k: string]: any };
+
+        /**
+         * Gets the default type url for SyncdSnapshot
+         * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+         * @returns The default type url
+         */
+        public static getTypeUrl(typeUrlPrefix?: string): string;
     }
 
     /** Properties of a SyncdValue. */
@@ -33487,6 +35593,13 @@ export namespace proto {
          * @returns JSON object
          */
         public toJSON(): { [k: string]: any };
+
+        /**
+         * Gets the default type url for SyncdValue
+         * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+         * @returns The default type url
+         */
+        public static getTypeUrl(typeUrlPrefix?: string): string;
     }
 
     /** Properties of a SyncdVersion. */
@@ -33577,6 +35690,13 @@ export namespace proto {
          * @returns JSON object
          */
         public toJSON(): { [k: string]: any };
+
+        /**
+         * Gets the default type url for SyncdVersion
+         * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+         * @returns The default type url
+         */
+        public static getTypeUrl(typeUrlPrefix?: string): string;
     }
 
     /** Properties of a TemplateButton. */
@@ -33688,6 +35808,13 @@ export namespace proto {
          * @returns JSON object
          */
         public toJSON(): { [k: string]: any };
+
+        /**
+         * Gets the default type url for TemplateButton
+         * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+         * @returns The default type url
+         */
+        public static getTypeUrl(typeUrlPrefix?: string): string;
     }
 
     namespace TemplateButton {
@@ -33786,6 +35913,13 @@ export namespace proto {
              * @returns JSON object
              */
             public toJSON(): { [k: string]: any };
+
+            /**
+             * Gets the default type url for CallButton
+             * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+             * @returns The default type url
+             */
+            public static getTypeUrl(typeUrlPrefix?: string): string;
         }
 
         /** Properties of a QuickReplyButton. */
@@ -33882,6 +36016,13 @@ export namespace proto {
              * @returns JSON object
              */
             public toJSON(): { [k: string]: any };
+
+            /**
+             * Gets the default type url for QuickReplyButton
+             * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+             * @returns The default type url
+             */
+            public static getTypeUrl(typeUrlPrefix?: string): string;
         }
 
         /** Properties of a URLButton. */
@@ -33978,6 +36119,13 @@ export namespace proto {
              * @returns JSON object
              */
             public toJSON(): { [k: string]: any };
+
+            /**
+             * Gets the default type url for URLButton
+             * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+             * @returns The default type url
+             */
+            public static getTypeUrl(typeUrlPrefix?: string): string;
         }
     }
 
@@ -34099,6 +36247,13 @@ export namespace proto {
          * @returns JSON object
          */
         public toJSON(): { [k: string]: any };
+
+        /**
+         * Gets the default type url for UserReceipt
+         * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+         * @returns The default type url
+         */
+        public static getTypeUrl(typeUrlPrefix?: string): string;
     }
 
     /** Properties of a VerifiedNameCertificate. */
@@ -34201,6 +36356,13 @@ export namespace proto {
          * @returns JSON object
          */
         public toJSON(): { [k: string]: any };
+
+        /**
+         * Gets the default type url for VerifiedNameCertificate
+         * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+         * @returns The default type url
+         */
+        public static getTypeUrl(typeUrlPrefix?: string): string;
     }
 
     namespace VerifiedNameCertificate {
@@ -34317,6 +36479,13 @@ export namespace proto {
              * @returns JSON object
              */
             public toJSON(): { [k: string]: any };
+
+            /**
+             * Gets the default type url for Details
+             * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+             * @returns The default type url
+             */
+            public static getTypeUrl(typeUrlPrefix?: string): string;
         }
     }
 
@@ -34414,6 +36583,13 @@ export namespace proto {
          * @returns JSON object
          */
         public toJSON(): { [k: string]: any };
+
+        /**
+         * Gets the default type url for WallpaperSettings
+         * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+         * @returns The default type url
+         */
+        public static getTypeUrl(typeUrlPrefix?: string): string;
     }
 
     /** Properties of a WebFeatures. */
@@ -34768,6 +36944,13 @@ export namespace proto {
          * @returns JSON object
          */
         public toJSON(): { [k: string]: any };
+
+        /**
+         * Gets the default type url for WebFeatures
+         * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+         * @returns The default type url
+         */
+        public static getTypeUrl(typeUrlPrefix?: string): string;
     }
 
     namespace WebFeatures {
@@ -35175,6 +37358,13 @@ export namespace proto {
          * @returns JSON object
          */
         public toJSON(): { [k: string]: any };
+
+        /**
+         * Gets the default type url for WebMessageInfo
+         * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+         * @returns The default type url
+         */
+        public static getTypeUrl(typeUrlPrefix?: string): string;
     }
 
     namespace WebMessageInfo {
@@ -35509,5 +37699,12 @@ export namespace proto {
          * @returns JSON object
          */
         public toJSON(): { [k: string]: any };
+
+        /**
+         * Gets the default type url for WebNotificationsInfo
+         * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+         * @returns The default type url
+         */
+        public static getTypeUrl(typeUrlPrefix?: string): string;
     }
 }
