@@ -7,6 +7,7 @@ import { proto } from '../../WAProto'
 import { version as baileysVersion } from '../Defaults/baileys-version.json'
 import { BaileysEventEmitter, BaileysEventMap, DisconnectReason, WACallUpdateType, WAVersion } from '../Types'
 import { BinaryNode, getAllBinaryNodeChildren } from '../WABinary'
+import Long from 'long'
 
 const PLATFORM_MAP = {
 	'aix': 'AIX',
