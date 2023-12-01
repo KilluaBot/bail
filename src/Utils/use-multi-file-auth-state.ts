@@ -40,11 +40,9 @@ export const useMultiFileAuthState = async (folder: string): Promise<{ state: Au
 				});
 				readStream.on('end', () => {
 					resolve(JSON.parse(data, BufferJSON.reviver));
-					readStream.destroy();
 				});
 				readStream.on('error', (error) => {
 					reject(error);
-					readStream.destroy();
 				});
 			});
 		} catch (error) {
