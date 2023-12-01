@@ -526,6 +526,13 @@ message ContextInfo {
         optional string newsletterJid = 1;
         optional int32 serverMessageId = 2;
         optional string newsletterName = 3;
+        optional ContentType contentType = 4;
+        optional string accessibilityText = 5;
+        enum ContentType {
+            UPDATE = 1;
+            UPDATE_CARD = 2;
+            LINK_CARD = 3;
+        }
     }
     
     message UTMInfo {
@@ -773,6 +780,7 @@ message HistorySync {
     repeated PastParticipants pastParticipants = 12;
     repeated CallLogRecord callLogRecords = 13;
     optional BotAIWaitListState aiWaitListState = 14;
+    repeated PhoneNumberToLIDMapping phoneNumberToLidMappings = 15;
     enum BotAIWaitListState {
         IN_WAITLIST = 0;
         AI_AVAILABLE = 1;
@@ -831,6 +839,7 @@ message IdentityKeyPairStructure {
 
 message InteractiveAnnotation {
     repeated Point polygonVertices = 1;
+    optional bool shouldSkipConfirmation = 4;
     oneof action {
         Location location = 2;
         ContextInfo.ForwardedNewsletterMessageInfo newsletter = 3;
@@ -2171,7 +2180,22 @@ message PatchDebugData {
     optional bytes newLthash = 2;
     optional bytes patchVersion = 3;
     optional bytes collectionName = 4;
-    optional bytes firstTwoBytesFromAHashOfSnapshotMacKey = 5;
+    optional bytes firstFourBytesFromAHashOfSnapshotMacKey = 5;
+    optional bytes newLthashSubtract = 6;
+    optional int32 numberAdd = 7;
+    optional int32 numberRemove = 8;
+    optional int32 numberOverride = 9;
+    optional Platform senderPlatform = 10;
+    optional bool isSenderPrimary = 11;
+    enum Platform {
+        ANDROID = 0;
+        SMBA = 1;
+        IPHONE = 2;
+        SMBI = 3;
+        WEB = 4;
+        UWP = 5;
+        DARWIN = 6;
+    }
 }
 
 message PaymentBackground {
@@ -2265,6 +2289,11 @@ message PaymentInfo {
         REVERSAL_PENDING = 30;
         REFUND_PENDING = 31;
     }
+}
+
+message PhoneNumberToLIDMapping {
+    optional string pnJid = 1;
+    optional string lidJid = 2;
 }
 
 message PhotoChange {

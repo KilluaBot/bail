@@ -5159,6 +5159,12 @@ export namespace proto {
 
             /** ForwardedNewsletterMessageInfo newsletterName */
             newsletterName?: (string|null);
+
+            /** ForwardedNewsletterMessageInfo contentType */
+            contentType?: (proto.ContextInfo.ForwardedNewsletterMessageInfo.ContentType|null);
+
+            /** ForwardedNewsletterMessageInfo accessibilityText */
+            accessibilityText?: (string|null);
         }
 
         /** Represents a ForwardedNewsletterMessageInfo. */
@@ -5178,6 +5184,12 @@ export namespace proto {
 
             /** ForwardedNewsletterMessageInfo newsletterName. */
             public newsletterName: string;
+
+            /** ForwardedNewsletterMessageInfo contentType. */
+            public contentType: proto.ContextInfo.ForwardedNewsletterMessageInfo.ContentType;
+
+            /** ForwardedNewsletterMessageInfo accessibilityText. */
+            public accessibilityText: string;
 
             /**
              * Creates a new ForwardedNewsletterMessageInfo instance using the specified properties.
@@ -5255,6 +5267,16 @@ export namespace proto {
              * @returns The default type url
              */
             public static getTypeUrl(typeUrlPrefix?: string): string;
+        }
+
+        namespace ForwardedNewsletterMessageInfo {
+
+            /** ContentType enum. */
+            enum ContentType {
+                UPDATE = 1,
+                UPDATE_CARD = 2,
+                LINK_CARD = 3
+            }
         }
 
         /** Properties of a UTMInfo. */
@@ -7855,6 +7877,9 @@ export namespace proto {
 
         /** HistorySync aiWaitListState */
         aiWaitListState?: (proto.HistorySync.BotAIWaitListState|null);
+
+        /** HistorySync phoneNumberToLidMappings */
+        phoneNumberToLidMappings?: (proto.IPhoneNumberToLIDMapping[]|null);
     }
 
     /** Represents a HistorySync. */
@@ -7904,6 +7929,9 @@ export namespace proto {
 
         /** HistorySync aiWaitListState. */
         public aiWaitListState: proto.HistorySync.BotAIWaitListState;
+
+        /** HistorySync phoneNumberToLidMappings. */
+        public phoneNumberToLidMappings: proto.IPhoneNumberToLIDMapping[];
 
         /**
          * Creates a new HistorySync instance using the specified properties.
@@ -8667,6 +8695,9 @@ export namespace proto {
         /** InteractiveAnnotation polygonVertices */
         polygonVertices?: (proto.IPoint[]|null);
 
+        /** InteractiveAnnotation shouldSkipConfirmation */
+        shouldSkipConfirmation?: (boolean|null);
+
         /** InteractiveAnnotation location */
         location?: (proto.ILocation|null);
 
@@ -8685,6 +8716,9 @@ export namespace proto {
 
         /** InteractiveAnnotation polygonVertices. */
         public polygonVertices: proto.IPoint[];
+
+        /** InteractiveAnnotation shouldSkipConfirmation. */
+        public shouldSkipConfirmation: boolean;
 
         /** InteractiveAnnotation location. */
         public location?: (proto.ILocation|null);
@@ -25255,8 +25289,26 @@ export namespace proto {
         /** PatchDebugData collectionName */
         collectionName?: (Uint8Array|null);
 
-        /** PatchDebugData firstTwoBytesFromAHashOfSnapshotMacKey */
-        firstTwoBytesFromAHashOfSnapshotMacKey?: (Uint8Array|null);
+        /** PatchDebugData firstFourBytesFromAHashOfSnapshotMacKey */
+        firstFourBytesFromAHashOfSnapshotMacKey?: (Uint8Array|null);
+
+        /** PatchDebugData newLthashSubtract */
+        newLthashSubtract?: (Uint8Array|null);
+
+        /** PatchDebugData numberAdd */
+        numberAdd?: (number|null);
+
+        /** PatchDebugData numberRemove */
+        numberRemove?: (number|null);
+
+        /** PatchDebugData numberOverride */
+        numberOverride?: (number|null);
+
+        /** PatchDebugData senderPlatform */
+        senderPlatform?: (proto.PatchDebugData.Platform|null);
+
+        /** PatchDebugData isSenderPrimary */
+        isSenderPrimary?: (boolean|null);
     }
 
     /** Represents a PatchDebugData. */
@@ -25280,8 +25332,26 @@ export namespace proto {
         /** PatchDebugData collectionName. */
         public collectionName: Uint8Array;
 
-        /** PatchDebugData firstTwoBytesFromAHashOfSnapshotMacKey. */
-        public firstTwoBytesFromAHashOfSnapshotMacKey: Uint8Array;
+        /** PatchDebugData firstFourBytesFromAHashOfSnapshotMacKey. */
+        public firstFourBytesFromAHashOfSnapshotMacKey: Uint8Array;
+
+        /** PatchDebugData newLthashSubtract. */
+        public newLthashSubtract: Uint8Array;
+
+        /** PatchDebugData numberAdd. */
+        public numberAdd: number;
+
+        /** PatchDebugData numberRemove. */
+        public numberRemove: number;
+
+        /** PatchDebugData numberOverride. */
+        public numberOverride: number;
+
+        /** PatchDebugData senderPlatform. */
+        public senderPlatform: proto.PatchDebugData.Platform;
+
+        /** PatchDebugData isSenderPrimary. */
+        public isSenderPrimary: boolean;
 
         /**
          * Creates a new PatchDebugData instance using the specified properties.
@@ -25359,6 +25429,20 @@ export namespace proto {
          * @returns The default type url
          */
         public static getTypeUrl(typeUrlPrefix?: string): string;
+    }
+
+    namespace PatchDebugData {
+
+        /** Platform enum. */
+        enum Platform {
+            ANDROID = 0,
+            SMBA = 1,
+            IPHONE = 2,
+            SMBI = 3,
+            WEB = 4,
+            UWP = 5,
+            DARWIN = 6
+        }
     }
 
     /** Properties of a PaymentBackground. */
@@ -25870,6 +25954,109 @@ export namespace proto {
             REVERSAL_PENDING = 30,
             REFUND_PENDING = 31
         }
+    }
+
+    /** Properties of a PhoneNumberToLIDMapping. */
+    interface IPhoneNumberToLIDMapping {
+
+        /** PhoneNumberToLIDMapping pnJid */
+        pnJid?: (string|null);
+
+        /** PhoneNumberToLIDMapping lidJid */
+        lidJid?: (string|null);
+    }
+
+    /** Represents a PhoneNumberToLIDMapping. */
+    class PhoneNumberToLIDMapping implements IPhoneNumberToLIDMapping {
+
+        /**
+         * Constructs a new PhoneNumberToLIDMapping.
+         * @param [properties] Properties to set
+         */
+        constructor(properties?: proto.IPhoneNumberToLIDMapping);
+
+        /** PhoneNumberToLIDMapping pnJid. */
+        public pnJid: string;
+
+        /** PhoneNumberToLIDMapping lidJid. */
+        public lidJid: string;
+
+        /**
+         * Creates a new PhoneNumberToLIDMapping instance using the specified properties.
+         * @param [properties] Properties to set
+         * @returns PhoneNumberToLIDMapping instance
+         */
+        public static create(properties?: proto.IPhoneNumberToLIDMapping): proto.PhoneNumberToLIDMapping;
+
+        /**
+         * Encodes the specified PhoneNumberToLIDMapping message. Does not implicitly {@link proto.PhoneNumberToLIDMapping.verify|verify} messages.
+         * @param message PhoneNumberToLIDMapping message or plain object to encode
+         * @param [writer] Writer to encode to
+         * @returns Writer
+         */
+        public static encode(message: proto.IPhoneNumberToLIDMapping, writer?: $protobuf.Writer): $protobuf.Writer;
+
+        /**
+         * Encodes the specified PhoneNumberToLIDMapping message, length delimited. Does not implicitly {@link proto.PhoneNumberToLIDMapping.verify|verify} messages.
+         * @param message PhoneNumberToLIDMapping message or plain object to encode
+         * @param [writer] Writer to encode to
+         * @returns Writer
+         */
+        public static encodeDelimited(message: proto.IPhoneNumberToLIDMapping, writer?: $protobuf.Writer): $protobuf.Writer;
+
+        /**
+         * Decodes a PhoneNumberToLIDMapping message from the specified reader or buffer.
+         * @param reader Reader or buffer to decode from
+         * @param [length] Message length if known beforehand
+         * @returns PhoneNumberToLIDMapping
+         * @throws {Error} If the payload is not a reader or valid buffer
+         * @throws {$protobuf.util.ProtocolError} If required fields are missing
+         */
+        public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): proto.PhoneNumberToLIDMapping;
+
+        /**
+         * Decodes a PhoneNumberToLIDMapping message from the specified reader or buffer, length delimited.
+         * @param reader Reader or buffer to decode from
+         * @returns PhoneNumberToLIDMapping
+         * @throws {Error} If the payload is not a reader or valid buffer
+         * @throws {$protobuf.util.ProtocolError} If required fields are missing
+         */
+        public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): proto.PhoneNumberToLIDMapping;
+
+        /**
+         * Verifies a PhoneNumberToLIDMapping message.
+         * @param message Plain object to verify
+         * @returns `null` if valid, otherwise the reason why it is not
+         */
+        public static verify(message: { [k: string]: any }): (string|null);
+
+        /**
+         * Creates a PhoneNumberToLIDMapping message from a plain object. Also converts values to their respective internal types.
+         * @param object Plain object
+         * @returns PhoneNumberToLIDMapping
+         */
+        public static fromObject(object: { [k: string]: any }): proto.PhoneNumberToLIDMapping;
+
+        /**
+         * Creates a plain object from a PhoneNumberToLIDMapping message. Also converts values to other types if specified.
+         * @param message PhoneNumberToLIDMapping
+         * @param [options] Conversion options
+         * @returns Plain object
+         */
+        public static toObject(message: proto.PhoneNumberToLIDMapping, options?: $protobuf.IConversionOptions): { [k: string]: any };
+
+        /**
+         * Converts this PhoneNumberToLIDMapping to JSON.
+         * @returns JSON object
+         */
+        public toJSON(): { [k: string]: any };
+
+        /**
+         * Gets the default type url for PhoneNumberToLIDMapping
+         * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+         * @returns The default type url
+         */
+        public static getTypeUrl(typeUrlPrefix?: string): string;
     }
 
     /** Properties of a PhotoChange. */
