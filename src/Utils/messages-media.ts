@@ -307,7 +307,7 @@ export async function generateThumbnail(
 	} else if(mediaType === 'video') {
 		const imgFilename = join(getTmpFilesDirectory(), generateMessageID() + '.jpg')
 		try {
-			await extractVideoThumb(file, imgFilename, '00:00:00', { width: 32, height: 32 })
+			await extractVideoThumb(file, imgFilename, '00:00:01', { width: 32, height: 32 })
 			const buff = await fs.readFile(imgFilename)
 			thumbnail = buff.toString('base64')
 
