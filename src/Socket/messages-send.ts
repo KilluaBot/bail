@@ -643,7 +643,6 @@ export const makeMessagesSocket = (config: SocketConfig) => {
 		relayMessage,
 		sendReceipt,
 		sendReceipts,
-		getButtonArgs,
 		readMessages,
 		refreshMediaConn,
 	   waUploadToServer,
@@ -704,7 +703,7 @@ export const makeMessagesSocket = (config: SocketConfig) => {
 			content: AnyMessageContent,
 			options: MiscMessageGenerationOptions = { }
 		) => {
-			const userJid = authState.creds.me!.id
+			const userJid = jidNormalizedUser(authState.creds.me!.id)
 			if(
 				typeof content === 'object' &&
 				'disappearingMessagesInChat' in content &&
