@@ -203,28 +203,7 @@ export const makeChatsSocket = (config: SocketConfig) => {
 			}
 		}
 	}
-
-	const fetchUsername = async(...jids: string[]) => {
-		const query = { tag: 'username', attrs: {} }
-		const list = jids.map((jid) => {
-			 // insures only 1 + is there
-			 const content = `+${jid.replace('+', '')}`
-
-			 return {
-				  tag: 'user',
-				  attrs: {},
-				  content: [{
-						tag: 'contact',
-						attrs: {},
-						content,
-				  }],
-			 }
-		})
-		const results = await interactiveQuery(list, query)
-
-		return results
- 	}
-
+	
 	/** update the profile picture for yourself or a group */
 	const updateProfilePicture = async(jid: string, content: WAMediaUpload) => {
 		const { img } = await generateProfilePicture(content)
@@ -1014,7 +993,6 @@ export const makeChatsSocket = (config: SocketConfig) => {
 		onWhatsApp,
 		fetchBlocklist,
 		fetchStatus,
-		fetchUsername,
 		updateProfilePicture,
 		removeProfilePicture,
 		updateProfileStatus,
