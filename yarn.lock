@@ -5095,13 +5095,12 @@ libphonenumber-js@^1.10.20:
   resolved "https://registry.npmjs.org/libphonenumber-js/-/libphonenumber-js-1.10.42.tgz"
   integrity sha512-/as6xI3D4Utfd28CCUPvMqX4oVXGMzk4ytzR52ju+sI/sN68LZpr9ED3Kh2kRfBbOALsLeeOSWdtyUPIbNWPrw==
 
-"libsignal@github:EvolutionAPI/libsignal-node":
+"libsignal@github:DikaArdnt/libsignal-node":
   version "2.0.2"
-  resolved "git+ssh://git@github.com/EvolutionAPI/libsignal-node.git"
-  integrity sha512-88YK3+mh6AO0kTClVBo2OebaC0a4CYTNYr6rihM+E9hZVuuyK50yUEXS6PXezJKzdT+B02FTeAzsmgNj30tTGQ==
+  resolved "git+ssh://git@github.com/DikaArdnt/libsignal-node.git#f8472025080d0bf47cb95d3ac040024888b025dc"
   dependencies:
     curve25519-js "^0.0.4"
-    protobufjs "^7.2.4"
+    protobufjs "^7.2.5"
 
 lines-and-columns@^1.1.6:
   version "1.2.4"
@@ -6269,7 +6268,7 @@ protobufjs-cli@^1.1.2:
     tmp "^0.2.1"
     uglify-js "^3.7.7"
 
-protobufjs@^7.0.0, protobufjs@^7.2.4, protobufjs@^7.2.5:
+protobufjs@^7.0.0, protobufjs@^7.2.5:
   version "7.2.5"
   resolved "https://registry.npmjs.org/protobufjs/-/protobufjs-7.2.5.tgz"
   integrity sha512-gGXRSXvxQ7UiPgfw8gevrfRWcTlSbOFg+p/N+JVJEK5VhueL2miT6qTymqAmjr1Q5WbOCyJbyrk6JfWKwlFn6A==
