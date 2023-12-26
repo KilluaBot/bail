@@ -97,7 +97,7 @@ export const extractImageThumb = async(bufferOrFilePath: Readable | Buffer | str
 
 	const lib = await getImageProcessingLibrary()
 	if('sharp' in lib && typeof lib.sharp?.default === 'function') {
-		const img = lib.sharp!.default(bufferOrFilePath)
+		const img = lib.sharp.default(bufferOrFilePath)
 		const dimensions = await img.metadata()
 
 		const buffer = await img
@@ -154,7 +154,7 @@ export const generateProfilePicture = async(mediaUpload: WAMediaUpload) => {
 	const lib = await getImageProcessingLibrary()
 	let img: Promise<Buffer>
 	if('sharp' in lib && typeof lib.sharp?.default === 'function') {
-		img = lib.sharp!.default(bufferOrFilePath)
+		img = lib.sharp.default(bufferOrFilePath)
 			.resize(640, 640)
 			.jpeg({
 				quality: 50,
@@ -307,7 +307,7 @@ export async function generateThumbnail(
 	} else if(mediaType === 'video') {
 		const imgFilename = join(getTmpFilesDirectory(), generateMessageID() + '.jpg')
 		try {
-			await extractVideoThumb(file, imgFilename, '00:00:00', { width: 32, height: 32 })
+			await extractVideoThumb(file, imgFilename, '00:00:01', { width: 32, height: 32 })
 			const buff = await fs.readFile(imgFilename)
 			thumbnail = buff.toString('base64')
 
@@ -325,7 +325,7 @@ export async function generateThumbnail(
 
 export const getHttpStream = async(url: string | URL, options: AxiosRequestConfig & { isStream?: true } = {}) => {
 	const { default: axios } = await import('axios')
-	const fetched = await axios.get(url.toString(), { ...options, responseType: 'stream' })
+	const fetched = await axios.get(url.toString(), { ...options, responseType: 'stream' } as unknown as undefined)
 	return fetched.data as Readable
 }
 
@@ -502,9 +502,9 @@ export const downloadEncryptedContent = async(
 		Origin: DEFAULT_ORIGIN,
 	}
 	if(startChunk || endChunk) {
-		headers!.Range = `bytes=${startChunk}-`
+		headers.Range = `bytes=${startChunk}-`
 		if(endChunk) {
-			headers!.Range += endChunk
+			headers.Range += endChunk
 		}
 	}
 
@@ -643,7 +643,7 @@ export const getWAUploadToServer = (
 						responseType: 'json',
 						maxBodyLength: Infinity,
 						maxContentLength: Infinity,
-					}
+					} as unknown as undefined
 				)
 				result = body.data
 

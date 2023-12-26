@@ -42,7 +42,7 @@ export const makeChatsSocket = (config: SocketConfig) => {
 		return key
 	}
 
-	const fetchPrivacySettings = async(force: boolean = false) => {
+	const fetchPrivacySettings = async(force = false) => {
 		if(!privacySettings || force) {
 			const { content } = await query({
 				tag: 'iq',
@@ -203,7 +203,7 @@ export const makeChatsSocket = (config: SocketConfig) => {
 			}
 		}
 	}
-
+	
 	/** update the profile picture for yourself or a group */
 	const updateProfilePicture = async(jid: string, content: WAMediaUpload) => {
 		const { img } = await generateProfilePicture(content)
@@ -540,7 +540,7 @@ export const makeChatsSocket = (config: SocketConfig) => {
 	const sendPresenceUpdate = async(type: WAPresence, toJid?: string) => {
 		const me = authState.creds.me!
 		if(type === 'available' || type === 'unavailable') {
-			if(!me!.name) {
+			if(!me.name) {
 				logger.warn('no name present, ignoring presence update request...')
 				return
 			}
@@ -550,7 +550,7 @@ export const makeChatsSocket = (config: SocketConfig) => {
 			await sendNode({
 				tag: 'presence',
 				attrs: {
-					name: me!.name,
+					name: me.name,
 					type
 				}
 			})
@@ -558,7 +558,7 @@ export const makeChatsSocket = (config: SocketConfig) => {
 			await sendNode({
 				tag: 'chatstate',
 				attrs: {
-					from: me!.id!,
+					from: me.id,
 					to: toJid!,
 				},
 				content: [
@@ -800,6 +800,18 @@ export const makeChatsSocket = (config: SocketConfig) => {
 	}
 
 	/**
+	 * Star or Unstar a message
+	 */
+	const star = (jid: string, messages: { id: string, fromMe?: boolean }[], star: boolean) => {
+		return chatModify({
+			star: {
+				messages,
+				star
+			}
+		}, jid)
+	}
+
+	/**
 	 * Adds label for the message
 	 */
 	const addMessageLabel = (jid: string, messageId: string, labelId: string) => {
@@ -849,7 +861,7 @@ export const makeChatsSocket = (config: SocketConfig) => {
 
 			// update our pushname too
 			if(msg.key.fromMe && msg.pushName && authState.creds.me?.name !== msg.pushName) {
-				ev.emit('creds.update', { me: { ...authState.creds.me!, name: msg.pushName! } })
+				ev.emit('creds.update', { me: { ...authState.creds.me!, name: msg.pushName } })
 			}
 		}
 
@@ -977,6 +989,7 @@ export const makeChatsSocket = (config: SocketConfig) => {
 		sendPresenceUpdate,
 		presenceSubscribe,
 		profilePictureUrl,
+		interactiveQuery,
 		onWhatsApp,
 		fetchBlocklist,
 		fetchStatus,
@@ -999,6 +1012,7 @@ export const makeChatsSocket = (config: SocketConfig) => {
 		addChatLabel,
 		removeChatLabel,
 		addMessageLabel,
-		removeMessageLabel
+		removeMessageLabel,
+		star
 	}
 }

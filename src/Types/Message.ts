@@ -50,7 +50,8 @@ export interface WAUrlInfo {
 // types to generate WA messages
 type Mentionable = {
     /** list of jids that are mentioned in the accompanying text */
-    mentions?: string[]
+    mentions?: string[],
+    groupMentions?: proto.IGroupMention[],
 }
 type Contextable = {
     /** add contextInfo to the message */

@@ -7,7 +7,7 @@ import open from 'open'
 import fs from 'fs'
 
 const logger = MAIN_LOGGER.child({})
-logger.level = 'trace'
+logger.level = 'error'
 
 const useStore = !process.argv.includes('--no-store')
 const doReplies = !process.argv.includes('--no-reply')
@@ -87,12 +87,6 @@ const startSock = async() => {
 		registration.phoneNumber = phoneNumber.format('E.164')
 		registration.phoneNumberCountryCode = phoneNumber.countryCallingCode
 		registration.phoneNumberNationalNumber = phoneNumber.nationalNumber
-		const mcc = PHONENUMBER_MCC[phoneNumber.countryCallingCode]
-		if(!mcc) {
-			throw new Error('Could not find MCC for phone number: ' + registration!.phoneNumber + '\nPlease specify the MCC manually.')
-		}
-
-		registration.phoneNumberMobileCountryCode = mcc
 
 		async function enterCode() {
 			try {
@@ -196,6 +190,10 @@ const startSock = async() => {
 
 			if(events.call) {
 				console.log('recv call event', events.call)
+			}
+
+			if (events["chats.phoneNumberShare"]) {
+				console.log(events["chats.phoneNumberShare"])
 			}
 
 			// history received

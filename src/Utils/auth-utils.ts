@@ -211,7 +211,7 @@ export const initAuthCreds = (): AuthenticationCreds => {
 		// mobile creds
 		deviceId: Buffer.from(uuidv4().replace(/-/g, ''), 'hex').toString('base64url'),
 		phoneId: uuidv4(),
-		identityId: randomBytes(20),
+		identityId: randomBytes(16),
 		registered: false,
 		backupToken: randomBytes(20),
 		registration: {} as never,
